@@ -1,5 +1,21 @@
 <!doctype html>
-
+<<<<<<< HEAD
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <img id="logo" src="https://schoolhistory.co.uk/assets/uploads/2015/10/ww1.jpeg">
+      <ul>
+        <li>
+          Home
+        </li>
+        <li>
+          Chapters
+        </li>
+      </ul>
+=======
 <html lang="en">
 
     <head>
@@ -44,7 +60,7 @@
           </ul>
         </div>
       </div>
-
+>>>>>>> 4efd7a21e4a1d652becfa43abf768e1b599c53d6
     </nav>
 
     <div class="content">
