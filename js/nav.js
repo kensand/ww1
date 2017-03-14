@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var nav = document.getElementById("nav");
 	var divs = nav.getElementsByTagName("div");
 	for(var i = 0; i < divs.length; i++){
-	    if(nav.clientWidth < 800){
+	    if(nav.clientWidth < 1400){
 		if(divs[i].style.display != "block"){
 		    divs[i].style.display = "none";
 		}

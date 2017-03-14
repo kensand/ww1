@@ -12,6 +12,10 @@ body {
 
 }
 
+.largeMap{
+    margin: 0 12.5% 0 12.5%;
+    width:75%;
+}
 a{
     color:white;
 }
