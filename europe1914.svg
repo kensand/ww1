@@ -165,7 +165,7 @@
      onclick="window.top.location='index.html';" />
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#000000;fill-opacity:1;stroke:none"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#000000;fill-opacity:1;stroke:none"
      x="993.09961"
      y="214.01469"
      id="text4521"
@@ -174,11 +174,11 @@
        x="993.09961"
        y="214.01469"
        id="tspan4519"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">Russia<tspan
+       style="pointer-events:none;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">Russia<tspan
    x="993.09961"
    y="214.01469"
    id="tspan4517"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '" /></tspan></text>
+   style="pointer-events:none;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '" /></tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:64px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#000000;fill-opacity:1;stroke:none"
@@ -190,11 +190,11 @@
        x="571.88812"
        y="361.54471"
        id="tspan4519-6"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">Germany</tspan></text>
+       style="pointer-events:none;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, '">Germany</tspan></text>
   <flowRoot
      xml:space="preserve"
      id="flowRoot5277"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+     style="pointer-events:none;fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
        id="flowRegion5279"><rect
          id="rect5281"
          width="171.70059"
@@ -203,7 +203,7 @@
          y="235.72455" /></flowRegion><flowPara
        id="flowPara5283" /></flowRoot>  <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:30.19151306px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75478786"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:30.19151306px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75478786"
      x="413.93661"
      y="-57.63361"
      id="text5287"
@@ -216,7 +216,7 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot5289"
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
        id="flowRegion5291"><rect
          id="rect5293"
          width="310.08618"
@@ -225,7 +225,7 @@
          y="478.72455" /></flowRegion><flowPara
        id="flowPara5295">Austria</flowPara></flowRoot>  <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:35.86056137px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.89651406"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:35.86056137px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.89651406"
      x="643.21075"
      y="557.15771"
      id="text5299"
@@ -237,7 +237,7 @@
        style="stroke-width:0.89651406">Austria-Hungary</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:35.960495px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.89901239"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:35.960495px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.89901239"
      x="944.16357"
      y="614.5553"
      id="text5303"
@@ -250,7 +250,7 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot5305"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+     style="pointer-events:none;fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
        id="flowRegion5307"><rect
          id="rect5309"
          width="210.98802"
@@ -259,7 +259,7 @@
          y="426.34131" /></flowRegion><flowPara
        id="flowPara5311" /></flowRoot>  <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="357.95209"
      y="480.17966"
      id="text5315"><tspan
@@ -270,7 +270,7 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot5317"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+     style="pointer-events:none;fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
        id="flowRegion5319"><rect
          id="rect5321"
          width="298.29343"
@@ -279,7 +279,7 @@
          y="765.37726" /></flowRegion><flowPara
        id="flowPara5323" /></flowRoot>  <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:36.94193649px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9235484"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:36.94193649px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9235484"
      x="1064.5217"
      y="797.13403"
      id="text5327"
@@ -291,7 +291,7 @@
        style="stroke-width:0.9235484">Ottoman Empire</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none"
      x="918.65472"
      y="-61.437805"
      id="text5353"
@@ -302,11 +302,11 @@
        id="tspan5351"><tspan
          x="918.65472"
          y="-61.437805"
-         style="text-align:center;writing-mode:lr-tb;text-anchor:middle"
+         style="pointer-events:none;text-align:center;writing-mode:lr-tb;text-anchor:middle"
          id="tspan5349">Italy</tspan></tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:35.64114761px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.8910287"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:35.64114761px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.8910287"
      x="1076.8875"
      y="-335.19861"
      id="text5339"
@@ -318,7 +318,7 @@
        style="stroke-width:0.8910287">Serbia</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:33.10726547px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.82768166"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:33.10726547px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.82768166"
      x="1056.1886"
      y="608.78278"
      id="text5343"
@@ -330,7 +330,7 @@
        style="stroke-width:0.82768166">Bulgaria</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:27.73049164px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.69326234"
+     style="pointer-events:none;font-style:normal;font-weight:normal;font-size:27.73049164px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.69326234"
      x="602.07001"
      y="-89.827347"
      id="text5347"
@@ -339,5 +339,5 @@
        id="tspan5345"
        x="602.07001"
        y="-89.827347"
-       style="stroke-width:0.69326234">Belgium</tspan></text>
+       style="pointer-events:none;stroke-width:0.69326234">Belgium</tspan></text>
 </svg>

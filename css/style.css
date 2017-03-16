@@ -6,7 +6,16 @@
 body {
     font-family: Typewriter;
     margin:0px;
+    color:black;
+    background-color:#667306;
     
+}
+
+.background{
+    background-color:#667306;
+}
+.forground{
+    background-color:#a6997e;
 }
 
 #logo{
@@ -17,31 +26,23 @@ body {
     margin: 0 12.5% 0 12.5%;
     width:75%;
 }
-a{
-    color:white;
-}
-a:hover{
-    color:blue;
-}
-a:visited{
-    color:white;
-}
 
 nav{
     width:100%;
-    background-color:green;
+    background-color:#a6997e;
 }
 nav div{
     border:1px solid black;
 }
 
 .navChapter{
-    text-indent:50px;
     display:none;
+    background-color:#76694e;
 }
+
 .navSection{
-    text-indent:100px;
     display:none;
+    background-color:#46391e;
 }
 
 nav div h6{
@@ -59,6 +60,13 @@ p{
 }
 /*mobile styling*/
 @media (min-width: 0px) {
+.navChapter{
+    text-indent:3em;
+}
+    
+.navSection{
+    text-indent:6em;
+}
     
     nav{
 	position:absolute;
@@ -69,17 +77,18 @@ p{
 	text-align: center;
     }
     nav div h6{
-	font-size:18px;
+	font-size:1em;
 	margin:auto;
-	line-height:25px;
-	padding-left:5px;
+	line-height:2em;
     }
     #menuButton{
 	display:block;
 	right:0;
 	position:absolute;
 	z-index:999;
-	
+	height:4em;
+	width:4em;
+	border-radius:.5em;
     }
 }
 
