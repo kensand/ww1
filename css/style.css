@@ -5,6 +5,7 @@
 
 body {
     font-family: Typewriter;
+    margin:0px;
     
 }
 
@@ -27,12 +28,24 @@ a:visited{
 }
 
 nav{
+    width:100%;
     background-color:green;
 }
+nav div{
+    border:1px solid black;
+}
 
+.navChapter{
+    text-indent:50px;
+    display:none;
+}
+.navSection{
+    text-indent:100px;
+    display:none;
+}
 
-
-nav div a{
+nav div h6{
+    cursor:pointer;
     color:white;
 }
 nav div a:hover{
@@ -41,20 +54,31 @@ nav div a:hover{
 nav div a:visited{
     color:white;
 }
+p{
+    text-align:center;
+}
 /*mobile styling*/
 @media (min-width: 0px) {
     
-
+    nav{
+	position:absolute;
+    }
+    
     nav div{
 	display:none;
 	text-align: center;
     }
-    nav div a{
+    nav div h6{
+	font-size:18px;
 	margin:auto;
+	line-height:25px;
+	padding-left:5px;
     }
     #menuButton{
 	display:block;
-	float:right;
+	right:0;
+	position:absolute;
+	z-index:999;
 	
     }
 }

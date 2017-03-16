@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1600mm"
+   height="900mm"
+   viewBox="0 0 1600 900"
+   version="1.1"
+   id="svg4501"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="landscapetimeline.svg">
+  <defs
+     id="defs4495" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.21150069"
+     inkscape:cx="2932.4059"
+     inkscape:cy="1849.327"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     width="1600mm"
+     inkscape:window-width="1842"
+     inkscape:window-height="973"
+     inkscape:window-x="1432"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5149" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4498">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,603)">
+    <rect
+       style="fill:#008000;fill-opacity:1;stroke-width:0.26458332"
+       id="rect5151"
+       width="1600"
+       height="900"
+       x="0"
+       y="-603" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke-width:9.47955036"
+       d="M 861.73242,192.75586 V 948.66211 H 1229.8574 V 2645.6699 H 547.95508 v -846.6152 h 378.0293 V 1043.1504 H 18.898438 v 755.9043 H 377.48047 v 846.6152 H 0 v 377.9512 h 6047.2441 v -377.9512 h -385.0312 v -846.6152 h 366.1328 v -755.9043 h -907.0859 v 755.9043 h 370.4804 v 846.6152 H 4809.8379 V 948.66211 h 360.5566 V 192.75586 h -907.0879 v 755.90625 h 376.0567 V 2645.6699 h -681.9024 v -846.6152 h 370.0977 v -755.9043 h -907.0859 v 755.9043 h 366.5117 v 846.6152 H 3105.0859 V 948.66211 h 364.5196 V 192.75586 h -907.086 v 755.90625 h 372.0899 V 2645.6699 H 2252.709 v -846.6152 h 374.0625 v -755.9043 h -907.086 v 755.9043 h 362.5469 v 846.6152 H 1400.332 V 948.66211 h 368.4864 V 192.75586 Z"
+       transform="matrix(0.26458333,0,0,0.26458333,0,-603)"
+       id="rect5050"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

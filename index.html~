@@ -30,7 +30,9 @@
     </nav>
     
     <div class="content">
-
+      <object data="europe1914.svg" type="image/svg+xml" class="largeMap">
+	<img src="europe1914.png" />
+      </object>
     </div>
    
     <footer>
