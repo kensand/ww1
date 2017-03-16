@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    window.event.stopPropagation();
+   event.stopPropagation();
     function toggleMenu(){
 	console.log("function call");
 	var nav = document.getElementById("nav");
