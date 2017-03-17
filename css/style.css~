@@ -5,7 +5,17 @@
 
 body {
     font-family: Typewriter;
+    margin:0px;
+    color:black;
+    background-color:#667306;
     
+}
+
+.background{
+    background-color:#667306;
+}
+.forground{
+    background-color:#a6997e;
 }
 
 #logo{
@@ -16,23 +26,27 @@ body {
     margin: 0 12.5% 0 12.5%;
     width:75%;
 }
-a{
-    color:white;
-}
-a:hover{
-    color:blue;
-}
-a:visited{
-    color:white;
-}
 
 nav{
-    background-color:green;
+    width:100%;
+    background-color:#a6997e;
+}
+nav div{
+    border:1px solid black;
 }
 
+.navChapter{
+    display:none;
+    background-color:#76694e;
+}
 
+.navSection{
+    display:none;
+    background-color:#46391e;
+}
 
-nav div a{
+nav div h6{
+    cursor:pointer;
     color:white;
 }
 nav div a:hover{
@@ -41,28 +55,49 @@ nav div a:hover{
 nav div a:visited{
     color:white;
 }
+p{
+    text-align:center;
+}
 /*mobile styling*/
 @media (min-width: 0px) {
+.navChapter{
+    padding:0em 0em 0em 1em;
+}
     
-
+.navSection{
+    
+}
+    
+    nav{
+	position:absolute;
+    }
+    
     nav div{
 	display:none;
-	text-align: center;
+	
     }
-    nav div a{
+    nav div h6{
+	font-size:1em;
 	margin:auto;
+	line-height:2em;
     }
     #menuButton{
 	display:block;
-	float:right;
-	
+	right:0;
+	position:absolute;
+	z-index:999;
+	height:4em;
+	width:4em;
+	border-radius:.5em;
     }
 }
 
 /*desktop styling*/
 @media (min-width: 1400px) {
 
-   
+    nav{
+	position:initial;
+    }
     nav div{
 	
 	display: inline-block; 
@@ -71,6 +106,14 @@ nav div a:visited{
     
     #menuButton{
 	display:none;
+    }
+    .navChapter{
+	position:absolute;
+    }
+
+    .navSection{
+	margin-left:1em;
+	padding:0em 1em 0em 1em;
     }
 }
 

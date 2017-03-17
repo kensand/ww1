@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function navResize(){
 	console.log("resize call");
 	var nav = document.getElementById("nav");
-	var divs = nav.getElementsByTagName("div");
+	var divs = nav.getElementsByClassName("navLabel");
 	for(var i = 0; i < divs.length; i++){
-	    if(nav.clientWidth < 1400){
+	    if(nav.clientWidth < 800){
 		if(divs[i].style.display != "block"){
 		    divs[i].style.display = "none";
 		}
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		divs[i].style.display = "inline-block";	
 	    }
 	}
-	if(nav.clientWidth > 1400 && nav.style.display != "block"){
+	if(nav.clientWidth > 800 && nav.style.display != "block"){
 	    nav.style.display = "block";
 	}/*
 	else if(nav.clientWidth > 1400 && nav.style.display != "block"){
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     
     chapLabel.close = function(){
-	var chaps = this.getElementsByClassName("navChapter");
+	var chaps = document.getElementById("chapterContainer").getElementsByClassName("navChapter");
 	for(var i = 0; i < chaps.length; i++){
 	    chaps[i].close();
 	    chaps[i].style.display = 'none';
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     
     chapLabel.open = function(){
-	var chaps = this.getElementsByClassName("navChapter");
+	var chaps = document.getElementById("chapterContainer").getElementsByClassName("navChapter");
 	for(var i = 0; i < chaps.length; i++){
 	    chaps[i].style.display = 'block';
 	    
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
    
     
-    var chaps = nav.getElementsByClassName("navChapter");
+    var chaps = document.getElementById("chapterContainer").getElementsByClassName("navChapter");
     for(var i = 0; i < chaps.length; i++){
 	chaps[i].state = "Closed";
 	chaps[i].close = function(){
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	}
 
 	chaps[i].open = function(){
-	    console.log('opening call');
+	    //console.log('opening call');
 	    var sections = this.getElementsByClassName("navSection");
 	    for(var j = 0; j < sections.length; j++){
 		//console.log(sections);
@@ -128,10 +128,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	}
 	chaps[i].onclick = function(e){
 	    if(this.state == "Open"){
-		console.log('calling close');
+		//console.log('calling close');
 		this.close();
 	    }
 	    else{
+		var chaps = document.getElementById("chapters");
+		chaps.close();
+		chaps.open();
 		this.open();
 	    }
 	    if (!e) var e = window.event;

@@ -5,11 +5,14 @@
 
 body {
     font-family: Typewriter;
+    
     margin:0px;
     color:black;
     background-color:#667306;
     
 }
+
+
 
 .background{
     background-color:#667306;
@@ -47,26 +50,29 @@ nav div{
 
 nav div h6{
     cursor:pointer;
-    color:white;
+    
 }
 nav div a:hover{
-    color:blue;
+    
 }
 nav div a:visited{
-    color:white;
+    
 }
 p{
     text-align:center;
 }
 /*mobile styling*/
-@media (min-width: 0px) {
-.navChapter{
-    text-indent:3em;
-}
+@media (max-width:800px) {
     
-.navSection{
-    text-indent:6em;
-}
+    .navChapter{
+	padding:0em 0em 0em 2em;
+	text-indent:10%;
+	
+    }
+    
+    .navSection{
+	text-indent:20%;
+    }
     
     nav{
 	position:absolute;
@@ -74,12 +80,16 @@ p{
     
     nav div{
 	display:none;
-	text-align: center;
+	
+    }
+    #chapterContainer{
+	display:block;
     }
     nav div h6{
-	font-size:1em;
+	font-size:2em;
 	margin:auto;
 	line-height:2em;
+	
     }
     #menuButton{
 	display:block;
@@ -93,17 +103,46 @@ p{
 }
 
 /*desktop styling*/
-@media (min-width: 1400px) {
-
-   
+@media (min-width: 800px) {
+    
+    .navLabel{
+	width:10%;
+	position:relative;
+	margin:auto;
+	text-align:center;
+    }
+    nav{
+	position:initial;
+    }
     nav div{
 	
 	display: inline-block; 
 	
     }
+    nav div h6{
+	font-size:1em;
+	margin:1em;
+	
+    }
+
+    #chapterContainer{
+	position:absolute;
+	display:block;
+    }
     
     #menuButton{
 	display:none;
+    }
+    .navChapter{
+	width:8em;
+	
+    }
+
+    .navSection{
+	margin-left:1em;
+	text-align:left;
+	//padding:0em 1em 0em 1em;
+	
     }
 }
 

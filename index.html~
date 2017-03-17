@@ -10,28 +10,66 @@
 
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
+	<script type="text/javascript" src="js/base.js"></script>
 	<script type="text/javascript" src="js/nav.js"></script>
     </head>
 
+    <button id="menuButton" class="foreground" >Menu</button>
     <nav id="nav">
-      <img id="logo"/>
-      <button id="menuButton" >Menu</button>
-      <br/>
-      <div>
-	<a href="index.html">Chapters</a>
+      
+      
+      
+      <div id="chapters" class="navLabel">
+	<h6>Chapters</h6>
+
+	<div class="navChapter">
+	  <h6>Chapter1</h6>
+	  
+	<div class="navSection" href="chapter1/summary.html">
+	  <h6>Summary</h6>
+	</div>
+	<div class="navSection" href="chapter1/section1.html">
+	  <h6>Section 1</h6>
+	</div>
+	<div class="navSection" href="chapter1/section2.html">
+	  <h6>Section 2</h6>  
+	</div>
+
+	<div class="navSection" href="chapter1/section3.html">
+	  <h6>Section 3</h6>
+	</div>
+	
+	<div class="navSection" href="chapter1/section4.html">
+	  <h6>Section 4</h6>  
+	</div>
+	
+	<div class="navSection" href="chapter1/section5.html">
+	  <h6>Section 5</h6>
+	</div>
+
+	<div class="navSection" href="chapter1/quiz.html">
+	  <h6>Quiz</h6>
+	</div>
       </div>
-      <div>
-	<a href="chapters.html">Chapters</a>
       </div>
-      <div>
-	<a href="chapters.html">Chapters</a>
+      
+      
+      
+      
+      
+      <div class="navLabel">
+	<h6 href="chapters.html">About</h6>
+      </div>
+      <div class="navLabel">
+	<h6 href="chapters.html">Media</h6>
       </div>
       
     </nav>
     
+    
     <div class="content">
       <object data="europe1914.svg" type="image/svg+xml" class="largeMap">
-	<img src="europe1914.png" />
+	<img src="europe1914.png"/>
       </object>
     </div>
    
