@@ -61,6 +61,11 @@ nav div a:visited{
 p{
     text-align:center;
 }
+hr{
+    border-color:black;
+    background-color:black;
+    color:black;
+}
 /*mobile styling*/
 @media (max-width:800px) {
     
@@ -96,9 +101,12 @@ p{
 	right:0;
 	position:absolute;
 	z-index:999;
-	height:4em;
-	width:4em;
+	padding:1em;
+	border:2px black outset;
 	border-radius:.5em;
+	background-color:#a6997e;
+	font-size:2em;
+	font-family:Typewriter;
     }
 }
 
@@ -110,13 +118,24 @@ p{
 	position:relative;
 	margin:auto;
 	text-align:center;
+	float:left;
+	
+    }
+    .navLabel:hover{
+	background-color:#E9E9E9;
+    }
+    .navChapter:hover{
+	background-color:#C9C9C9;
+    }
+    .navSection:hover{
+	background-color:#A9A9A9;
     }
     nav{
-	position:initial;
+	display:inline-block;
     }
     nav div{
 	
-	display: inline-block; 
+	
 	
     }
     nav div h6{

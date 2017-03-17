@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
-   event.stopPropagation();
+    event.stopPropagation();
     function toggleMenu(){
 	console.log("function call");
 	var nav = document.getElementById("nav");
@@ -25,14 +25,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	
 	/*
 	  if(nav.style.display == ""){
-	    nav.style.display = "block";
-	}
-	else if(nav.style.display == "none"){
-	    nav.style.display = "block";
-	}
-	else if(nav.style.display == "block"){
-	    nav.style.display = "none";
-	}*/
+	  nav.style.display = "block";
+	  }
+	  else if(nav.style.display == "none"){
+	  nav.style.display = "block";
+	  }
+	  else if(nav.style.display == "block"){
+	  nav.style.display = "none";
+	  }*/
     }
     function navResize(){
 	console.log("resize call");
@@ -48,14 +48,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		divs[i].style.display = "inline-block";	
 	    }
 	}
-	if(nav.clientWidth > 800 && nav.style.display != "block"){
-	    nav.style.display = "block";
+	if(nav.clientWidth > 800 && nav.style.display != "inline-block"){
+	    nav.style.display = "inline-block";
 	}/*
-	else if(nav.clientWidth > 1400 && nav.style.display != "block"){
-	    nav.style.display = "block";
-	}
-	    */
-	    
+	   else if(nav.clientWidth > 1400 && nav.style.display != "block"){
+	   nav.style.display = "block";
+	   }
+	 */
+	
     }
     document.getElementById("menuButton").onclick = toggleMenu;
     addResizeEvent(navResize);
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	if (e.stopPropagation) e.stopPropagation();
 	return false;
     }
-   
+    
     
     var chaps = document.getElementById("chapterContainer").getElementsByClassName("navChapter");
     for(var i = 0; i < chaps.length; i++){
