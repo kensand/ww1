@@ -20,8 +20,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var div = document.createElement("div");
     var logo = document.createElement("img");
     logo.id = "logo";
+    div.onclick = function(){window.location = "../index.html";};//setAttribute("href", "../index.html");
+    div.setAttribute("alt", "Home");
+    div.setAttribute("title", "Home");
     div.id = "logodiv";
-    logo.setAttribute("src", "images/Websiteicon.svg");
+    logo.setAttribute("src", "../images/Websiteicon.svg");
     //logo.setAttribute("type", "image/svg+xml");
     div.appendChild(logo);
     nav.parentNode.insertBefore(div, nav);
@@ -98,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //quiz
     section = document.createElement("div");
     section.className = "navSection"
-    section.setAttribute("href", "../chapter1/1uiz.html");
+    section.setAttribute("href", "../chapter1/quiz.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Quiz"));
     section.appendChild(h);
@@ -117,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     label = document.createElement("div");
     label.id = "About";
     label.className = "navLabel";
+    label.setAttribute("href", "../chapter1/quiz.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("About"));
     label.appendChild(h);
@@ -174,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var nav = document.getElementById("nav");
 	var divs = nav.getElementsByClassName("navLabel");
 	for(var i = 0; i < divs.length; i++){
-	    if(nav.clientWidth < 800){
+	    if(window.innerWidth < 800){
 		if(divs[i].style.display != "block"){
 		    divs[i].style.display = "none";
 		}
@@ -183,10 +187,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		divs[i].style.display = "inline-block";	
 	    }
 	}
-	if(nav.clientWidth > 800 && nav.style.display != "inline-block"){
+	if(window.innerWidth >= 800 && nav.style.display != "inline-block"){
 	    nav.style.display = "inline-block";
+	}
+	else if(window.innerWidth < 800 && nav.style.display != "block"){
+	    nav.style.display = "block";
 	}/*
-	   else if(nav.clientWidth > 1400 && nav.style.display != "block"){
+	   else if(window.innerWidth > 1400 && nav.style.display != "block"){
 	   nav.style.display = "block";
 	   }
 	 */
