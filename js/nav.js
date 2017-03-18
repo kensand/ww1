@@ -1,6 +1,141 @@
 
+
 document.addEventListener("DOMContentLoaded", function(event) {
-    event.stopPropagation();
+    /*generate nav bar*/
+    var nav = document.getElementById("nav");
+
+    var button = document.createElement("button");
+    button.id = "menuButton";
+    button.className = "foreground";
+    button.appendChild(document.createTextNode("Menu"));
+    button.onclick= toggleMenu;
+    nav.appendChild(button);
+    var label = document.createElement("div");
+    var h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Chapters"));
+    label.id = "chapters";
+    label.className = "navLabel";
+    label.appendChild(h);
+
+    var div = document.createElement("div");
+    var logo = document.createElement("img");
+    logo.id = "logo";
+    div.id = "logodiv";
+    logo.setAttribute("src", "images/Websiteicon.svg");
+    //logo.setAttribute("type", "image/svg+xml");
+    div.appendChild(logo);
+    nav.parentNode.insertBefore(div, nav);
+    
+    /*create Chapter container*/
+    var chapcont = document.createElement("div");
+    chapcont.id = "chapterContainer";
+
+    var section;
+    var chap;
+    
+    /*Chapter 1*/
+    chap = document.createElement("div");
+    chap.className = "navChapter";
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Chapter 1"));
+    chap.appendChild(h);
+
+    //Summary
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter1/summary.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Summary"));
+    section.appendChild(h);
+    chap.appendChild(section);
+    
+
+    //section 1
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter1/section1.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 1"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 2
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter1/section2.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 2"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 3
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter1/section3.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 3"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 4
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter1/section4.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 4"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 5
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter1/section5.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 5"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //quiz
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter1/1uiz.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Quiz"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    chapcont.appendChild(chap);
+    /*Chapter 2*/
+
+    
+    label.appendChild(chapcont);
+    nav.appendChild(label);
+
+
+    
+    label = document.createElement("div");
+    label.id = "About";
+    label.className = "navLabel";
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("About"));
+    label.appendChild(h);
+    nav.appendChild(label);
+    
+    label = document.createElement("div");
+    label.id = "Media";
+    label.className = "navLabel";
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Media"));
+    label.appendChild(h);
+    nav.appendChild(label);
+
+
+    
+
+
+    
+    
     function toggleMenu(){
 	console.log("function call");
 	var nav = document.getElementById("nav");
@@ -57,8 +192,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	 */
 	
     }
-    document.getElementById("menuButton").onclick = toggleMenu;
     addResizeEvent(navResize);
+    
 
 
     /*build ChapterLabel menu */

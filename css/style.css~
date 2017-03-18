@@ -5,11 +5,14 @@
 
 body {
     font-family: Typewriter;
+    
     margin:0px;
     color:black;
     background-color:#667306;
     
 }
+
+
 
 .background{
     background-color:#667306;
@@ -47,26 +50,37 @@ nav div{
 
 nav div h6{
     cursor:pointer;
-    color:white;
+    
 }
 nav div a:hover{
-    color:blue;
+    
 }
 nav div a:visited{
-    color:white;
+    
 }
 p{
     text-align:center;
 }
+hr{
+    border-color:black;
+    background-color:black;
+    color:black;
+}
 /*mobile styling*/
-@media (min-width: 0px) {
-.navChapter{
-    padding:0em 0em 0em 1em;
-}
+@media (max-width:800px) {
+    .navLabel{
+	font-size:2em;
+    }
     
-.navSection{
+    .navChapter{
+	padding:0em 0em 0em 2em;
+	text-indent:10%;
+	
+    }
     
-}
+    .navSection{
+	text-indent:20%;
+    }
     
     nav{
 	position:absolute;
@@ -76,44 +90,79 @@ p{
 	display:none;
 	
     }
+    #chapterContainer{
+	display:block;
+    }
     nav div h6{
-	font-size:1em;
+
 	margin:auto;
 	line-height:2em;
+	
     }
     #menuButton{
 	display:block;
 	right:0;
 	position:absolute;
 	z-index:999;
-	height:4em;
-	width:4em;
+	padding:1em;
+	border:2px black outset;
 	border-radius:.5em;
+	background-color:#a6997e;
+	font-size:2em;
+	font-family:Typewriter;
     }
 }
 
 /*desktop styling*/
-@media (min-width: 1400px) {
-
+@media (min-width: 800px) {
+    
+    .navLabel{
+	width:10%;
+	position:relative;
+	margin:auto;
+	text-align:center;
+	float:left;
+	
+    }
+    .navLabel:hover{
+	background-color:#E9E9E9;
+    }
+    .navChapter:hover{
+	background-color:#C9C9C9;
+    }
+    .navSection:hover{
+	background-color:#A9A9A9;
+    }
     nav{
-	position:initial;
+	display:inline-block;
     }
     nav div{
 	
-	display: inline-block; 
 	
+	
+    }
+    nav div h6{
+	font-size:1em;
+	margin:1em;
+	
+    }
+
+    #chapterContainer{
+	position:absolute;
+	display:block;
     }
     
     #menuButton{
 	display:none;
     }
     .navChapter{
-	position:absolute;
+	width:8em;
+	
     }
 
     .navSection{
 	margin-left:1em;
-	padding:0em 1em 0em 1em;
+	text-align:left;
     }
 }
 

@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    
+    <script type="text/javascript" src="../js/base.js"></script>
+    
+    
+    
+  </head>
+  <body>
+    <nav id="nav">
+    </nav>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <div class="content">
+      
+      <object data="europe1914.svg" type="image/svg+xml" class="largeMap">
+	
+      </object>
+    </div>
+
+    <footer>
+      <br/>
+      <hr/>
+      <p>Copyright 2017 Jacob Stephens, Kenneth Sanders, Aliyu B. Zakari</p>
+    </footer>
+  </body>
+
+</html>
+

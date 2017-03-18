@@ -22,9 +22,22 @@ body {
 }
 
 #logo{
-
+    
+    float:left;
+    width:100%;
+    max-width:1005;
+    background-color:#a6997e;
 }
-
+#logodiv{
+    display:inline-block;
+    width:10%;
+    float:left;
+}
+#nav{
+    width:90%;
+    float:left;
+    display:inline-block;
+}
 .largeMap{
     margin: 0 12.5% 0 12.5%;
     width:75%;
@@ -48,7 +61,7 @@ nav div{
     background-color:#46391e;
 }
 
-nav div h6{
+h6{
     cursor:pointer;
     
 }
@@ -68,6 +81,9 @@ hr{
 }
 /*mobile styling*/
 @media (max-width:800px) {
+    .navLabel{
+	font-size:2em;
+    }
     
     .navChapter{
 	padding:0em 0em 0em 2em;
@@ -91,7 +107,7 @@ hr{
 	display:block;
     }
     nav div h6{
-	font-size:2em;
+
 	margin:auto;
 	line-height:2em;
 	
@@ -160,8 +176,6 @@ hr{
     .navSection{
 	margin-left:1em;
 	text-align:left;
-	//padding:0em 1em 0em 1em;
-	
     }
 }
 
