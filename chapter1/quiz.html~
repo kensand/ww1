@@ -20,15 +20,19 @@
   </nav>
   <div id="titlediv">
     <h1 id="title">
-      Chapter 1 - Quiz
+      Chapter 1 - Summary
     </h1>
-    
   </div>
+
   
-  <div class="content">
-    <div id="chapter1quiz">
-      <script type="text/javascript" src="../js/chapter1quiz.js"></script>
-    </div>
+
+	
+
+
+<div class="content">
+    <object data="../images/europe1914.svg" type="image/svg+xml" class="largeMap">
+      <img class="largeMap" src="../images/europe1914.png"/>
+    </object>
   </div>
 
   <footer id="footer">
