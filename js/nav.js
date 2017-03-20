@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     button.className = "foreground";
     button.appendChild(document.createTextNode("Menu"));
     button.onclick= toggleMenu;
-    nav.appendChild(button);
+    nav.parentNode.insertBefore(button, nav);
     var label = document.createElement("div");
     var h = document.createElement("h6");
     h.appendChild(document.createTextNode("Chapters"));

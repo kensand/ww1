@@ -107,6 +107,7 @@ hr{
     }
     
     nav{
+	width:80%;
 	position:absolute;
 border-radius:4px;	
     }
@@ -125,9 +126,9 @@ border-radius:4px;
 	
     }
     #menuButton{
+	width:20%;
 	display:block;
-	right:0;
-	position:absolute;
+	float:right;
 	z-index:999;
 	padding:1em;
 	border:2px black outset;

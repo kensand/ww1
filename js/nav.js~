@@ -8,13 +8,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
     button.id = "menuButton";
     button.className = "foreground";
     button.appendChild(document.createTextNode("Menu"));
+    button.onclick= toggleMenu;
     nav.appendChild(button);
     var label = document.createElement("div");
-    var h = document.createElement("h6").appendChild(document.createTextNode("Chapters"));
+    var h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Chapters"));
     label.id = "chapters";
     label.className = "navLabel";
     label.appendChild(h);
 
+    var div = document.createElement("div");
+    var logo = document.createElement("img");
+    logo.id = "logo";
+    div.onclick = function(){window.location = "../index.html";};//setAttribute("href", "../index.html");
+    div.setAttribute("alt", "Home");
+    div.setAttribute("title", "Home");
+    div.id = "logodiv";
+    logo.setAttribute("src", "../images/Websiteicon.svg");
+    //logo.setAttribute("type", "image/svg+xml");
+    div.appendChild(logo);
+    nav.parentNode.insertBefore(div, nav);
+    
     /*create Chapter container*/
     var chapcont = document.createElement("div");
     chapcont.id = "chapterContainer";
@@ -32,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //Summary
     section = document.createElement("div");
     section.className = "navSection"
-    section.setAttribute("href", "chapter1/summary.html");
+    section.setAttribute("href", "../chapter1/summary.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Summary"));
     section.appendChild(h);
@@ -42,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //section 1
     section = document.createElement("div");
     section.className = "navSection"
-    section.setAttribute("href", "chapter1/section1.html");
+    section.setAttribute("href", "../chapter1/section1.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Section 1"));
     section.appendChild(h);
@@ -51,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //section 2
     section = document.createElement("div");
     section.className = "navSection"
-    section.setAttribute("href", "chapter1/section2.html");
+    section.setAttribute("href", "../chapter1/section2.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Section 2"));
     section.appendChild(h);
@@ -60,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //section 3
     section = document.createElement("div");
     section.className = "navSection"
-    section.setAttribute("href", "chapter1/section3.html");
+    section.setAttribute("href", "../chapter1/section3.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Section 3"));
     section.appendChild(h);
@@ -69,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //section 4
     section = document.createElement("div");
     section.className = "navSection"
-    section.setAttribute("href", "chapter1/section4.html");
+    section.setAttribute("href", "../chapter1/section4.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Section 4"));
     section.appendChild(h);
@@ -78,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //section 5
     section = document.createElement("div");
     section.className = "navSection"
-    section.setAttribute("href", "chapter1/section5.html");
+    section.setAttribute("href", "../chapter1/section5.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Section 5"));
     section.appendChild(h);
@@ -87,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //quiz
     section = document.createElement("div");
     section.className = "navSection"
-    section.setAttribute("href", "chapter1/1uiz.html");
+    section.setAttribute("href", "../chapter1/quiz.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Quiz"));
     section.appendChild(h);
@@ -106,13 +120,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     label = document.createElement("div");
     label.id = "About";
     label.className = "navLabel";
-    label.appendChild(document.createElement("h6").appendChild(document.createTextNode("About")));
+    label.setAttribute("href", "../chapter1/quiz.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("About"));
+    label.appendChild(h);
     nav.appendChild(label);
     
     label = document.createElement("div");
     label.id = "Media";
     label.className = "navLabel";
-    label.appendChild(document.createElement("h6").appendChild(document.createTextNode("Media")));
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Media"));
+    label.appendChild(h);
     nav.appendChild(label);
 
 
@@ -120,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
     
-    event.stopPropagation();
+    
     function toggleMenu(){
 	console.log("function call");
 	var nav = document.getElementById("nav");
@@ -159,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var nav = document.getElementById("nav");
 	var divs = nav.getElementsByClassName("navLabel");
 	for(var i = 0; i < divs.length; i++){
-	    if(nav.clientWidth < 800){
+	    if(window.innerWidth < 800){
 		if(divs[i].style.display != "block"){
 		    divs[i].style.display = "none";
 		}
@@ -168,17 +187,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		divs[i].style.display = "inline-block";	
 	    }
 	}
-	if(nav.clientWidth > 800 && nav.style.display != "inline-block"){
+	if(window.innerWidth >= 800 && nav.style.display != "inline-block"){
 	    nav.style.display = "inline-block";
+	}
+	else if(window.innerWidth < 800 && nav.style.display != "block"){
+	    nav.style.display = "block";
 	}/*
-	   else if(nav.clientWidth > 1400 && nav.style.display != "block"){
+	   else if(window.innerWidth > 1400 && nav.style.display != "block"){
 	   nav.style.display = "block";
 	   }
 	 */
 	
     }
-    document.getElementById("menuButton").onclick = toggleMenu;
     addResizeEvent(navResize);
+    
 
 
     /*build ChapterLabel menu */
