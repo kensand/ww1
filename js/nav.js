@@ -128,7 +128,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     label = document.createElement("div");
     label.id = "Media";
-    label.className = "navLabel";
+        label.className = "navLabel";
+        label.onclick = function(){window.location = "../media/index.html";};
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Media"));
     label.appendChild(h);
