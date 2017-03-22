@@ -126,14 +126,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     label.appendChild(h);
     nav.appendChild(label);
     
+	var a = document.createElement("a");
     label = document.createElement("div");
     label.id = "Media";
     label.className = "navLabel";
-    label.setAttribute("href", "../media/index.html");
+    a.setAttribute("href", "../media/index.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Media"));
     label.appendChild(h);
-    nav.appendChild(label);
+	a.appendChild(label);	
+    nav.appendChild(a);
 
 
     
