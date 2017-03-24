@@ -120,19 +120,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     label = document.createElement("div");
     label.id = "About";
     label.className = "navLabel";
-    label.setAttribute("href", "../chapter1/quiz.html");
+    label.setAttribute("href", "../home/index.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("About"));
     label.appendChild(h);
     nav.appendChild(label);
     
+	var a = document.createElement("a");
     label = document.createElement("div");
     label.id = "Media";
     label.className = "navLabel";
+    a.setAttribute("href", "../media/index.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Media"));
     label.appendChild(h);
-    nav.appendChild(label);
+	a.appendChild(label);	
+    nav.appendChild(a);
 
 
     

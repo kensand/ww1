@@ -130,6 +130,8 @@ hr{
     width:20%;
 }
 .content{
+    width:100%;
+    text-align:center;
     display:inline-block;
 }
 
@@ -146,6 +148,29 @@ hr{
 }
 #footer p{
     text-align:center;
+}
+
+.quizButton{
+    display:block;
+    background-color:#a6997e;
+    margin:1em auto 1em auto;
+    border:1px solid black;
+    border-radius:.5em;
+    padding:1em;
+    
+}
+.quizStartButton{
+    display:inline-block;
+    background-color:#a6997e;
+    margin:1em auto 1em auto;
+    border:1px solid black;
+    border-radius:.5em;
+    padding:1em;
+    
+}
+.quizCont{
+    text-align:center;
+    width:100%;
 }
 /*mobile styling*/
 @media (max-width:799px) {
