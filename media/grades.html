@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+  
+  <nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      World War 1: Unraveled - Home
+    </h1>
+  </div>
+
+  
+
+	
+
+
+<div class="content" style="display:block;">
+    
+  </div>
+
+<footer id="footer">
+  
+  <script type="text/javascript" src="../js/jsbn/prng4.js"></script>
+  <script type="text/javascript" src="../js/jsbn/rng.js"></script>
+    <script type="text/javascript" src="../js/jsbn/jsbn.js"></script>
+    <script type="text/javascript" src="../js/jsbn/jsbn2.js"></script>
+    <script type="text/javascript" src="../js/jsbn/rsa.js"></script>
+    <script type="text/javascript" src="../js/jsbn/rsa2.js"></script>
+    <script type="text/javascript" src="../js/grades.js"></script>
+
+    <label for="privkey">Private Key</label>
+    <input name="privkey" id="privkey"/>
+
+    <button id="submitButton">submit</button>
+    
+    <label for="pubkey">Public Key</label>
+    <input name="privkey" id="pubkey"/>
+
+    <textarea id="text">
+
+    </textarea>  
+
+    <script>
+      var button = document.getElementById("submitButton");
+      button.onclick = function(){
+      var priv = document.getElementById("privKey");
+      var text = document.getElementById("text");
+      text.value = encode("hi", 1);
+      }
+      
+    </script>
+    
+  </footer>
+</body>
+
+</html>
+
