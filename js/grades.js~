@@ -1,10 +1,11 @@
 var len = 1024;
 var pubE = "10001";
+var modulus = "1009230452304583204532045802845";
 //var rsa = RSAKey();
 var encode = function(encString, pubMod){
         var rsa = new RSAKey();
-        rsa.setPublic(pubMod, pubE); 
-    return linebrk(rsa.encrypt(linebrk(encString, 64)), 64);
+        rsa.setPublic(byte2Hex(pubMod), pubE); 
+    return linebrk(rsa.encrypt(encString), 64);
 }
 
 var decode = function(decString, privKey, mod){

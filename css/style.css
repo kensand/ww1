@@ -12,6 +12,10 @@ body {
     
 }
 
+textarea{
+    width:50%;
+    height:10em;
+}
 a{
     color:black;
 }

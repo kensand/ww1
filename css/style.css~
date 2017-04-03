@@ -8,11 +8,19 @@ body {
     
     margin:0px;
     color:black;
-    background-color:#667306;
+    background-color:#a6b346;
     
 }
 
-
+a{
+    color:black;
+}
+a:hover{
+    color:white;
+}
+a:visited{
+    color:black;
+}
 
 .background{
     background-color:#667306;
@@ -21,6 +29,14 @@ body {
     background-color:#a6997e;
 }
 
+
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+    
 
 #nav{
     float:left;
@@ -42,6 +58,7 @@ nav div{
 .navChapter{
     display:none;
     background-color:#76694e;
+    color:white;
 }
 div{
     border-radius:2%;
@@ -49,6 +66,7 @@ div{
 .navSection{
     display:none;
     background-color:#46391e;
+    color:white;
 }
 
 h6{
@@ -62,12 +80,97 @@ nav div a:visited{
     
 }
 p{
-    text-align:center;
+    
+    text-align:left;
+    margin:1em;
 }
 hr{
     border-color:black;
     background-color:black;
     color:black;
+}
+#arrows{
+    
+    bottom:4em;
+    width:100%;
+    displayL:inline-block;
+}
+#next{
+    float:right;
+    margin:0em 1em 0em 1em;
+    background-color:#a6997e;
+    padding:1em;
+    border:1px solid black;
+    border-radius:1em;
+    display:block;
+}
+#prev{
+    margin:0em 1em 0em 1em;
+    float:left;
+    background-color:#a6997e;
+    color:black;
+    padding:1em;
+    display:block;
+    border:1px solid black;
+    border-radius:1em;
+    display:block;
+}
+
+.contentImg{
+    display:inline-block;
+    margin:1em;
+}
+.lgWidth{
+    width:80%;
+}
+.medWidth{
+    width:40%;
+}
+.smWidth{
+    width:20%;
+}
+.content{
+    width:100%;
+    text-align:center;
+    display:inline-block;
+}
+
+.content p{
+    text-indent:2em;
+}
+#footer{
+    displayL:inline-block;
+    
+    left:0px;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+}
+#footer p{
+    text-align:center;
+}
+
+.quizButton{
+    display:block;
+    background-color:#a6997e;
+    margin:1em auto 1em auto;
+    border:1px solid black;
+    border-radius:.5em;
+    padding:1em;
+    
+}
+.quizStartButton{
+    display:inline-block;
+    background-color:#a6997e;
+    margin:1em auto 1em auto;
+    border:1px solid black;
+    border-radius:.5em;
+    padding:1em;
+    
+}
+.quizCont{
+    text-align:center;
+    width:100%;
 }
 /*mobile styling*/
 @media (max-width:799px) {
@@ -136,6 +239,7 @@ border-radius:4px;
 	background-color:#a6997e;
 	font-size:2em;
 	font-family:Typewriter;
+	cursor:pointer;
     }
 }
 
