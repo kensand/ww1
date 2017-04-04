@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+  
+  <nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      Chapter 1 - Quiz
+    </h1>
+    
+  </div>
+  
+  <div class="content">
+    <div id="chapter1quiz">
+      <script type="text/javascript" src="../js/chapter1quiz.js"></script>
+    </div>
+  </div>
+
+  <footer id="footer">
+    
+  </footer>
+</body>
+
+</html>
+
