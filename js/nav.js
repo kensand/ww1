@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     div.setAttribute("alt", "Home");
     div.setAttribute("title", "Home");
     div.id = "logodiv";
-    logo.setAttribute("src", "../images/Websiteicon.svg");
+    logo.setAttribute("src", "../images/WW1_ur.svg");
     //logo.setAttribute("type", "image/svg+xml");
     div.appendChild(logo);
     nav.parentNode.insertBefore(div, nav);
