@@ -1,6 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
+
 	/*generate nav bar*/
 	var nav = document.getElementById("nav");
 	
