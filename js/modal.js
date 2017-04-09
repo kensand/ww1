@@ -1,17 +1,7 @@
-function addResizeEvent(func){
-    var oldResize = window.onresize;
-    window.onresize = function () {
-        func();
-        if (typeof oldResize === 'function') {
-            oldResize();
-        }
-    };
-}
-
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-        var content = document.getElementById("content");
+        var content = document.getElementsById("content");
         console.log(content);
         var modal = document.createElement("div");
         var modalContent = document.createElement("div");
@@ -51,14 +41,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                                 }
                                 window.onclick = null;
                         }
-			modal.onclick = function(e){
-				
-				var mod = document.getElementById("modal");
-				if (e.target == mod) {
-				//console.log(e.target == mod);
-					mod.style.display = "none";
-				}
-			}
                         
                 }
 

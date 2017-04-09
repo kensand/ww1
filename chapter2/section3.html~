@@ -29,7 +29,7 @@
 	
 
 
-  <div class="content">
+  <div id="content">
     
     <p>
       <img class="right contentImg smWidth" src="../images/chapter-images/chapter1/ch1-sec3-img1.png"/>

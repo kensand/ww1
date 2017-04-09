@@ -29,7 +29,7 @@
 	
 
 
-<div class="content">
+<div id="content">
     <object data="../images/europe1914.svg" type="image/svg+xml" class="largeMap">
       <img class="largeMap" src="../images/europe1914.png"/>
     </object>
