@@ -19,13 +19,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	label.appendChild(h);
 
 	var div = document.createElement("div");
-	var logo = document.createElement("img");
+	var logo = document.createElement("object");
 	logo.id = "logo";
 	div.onclick = function(){window.location = "../index.html";};//setAttribute("href", "../index.html");
 	div.setAttribute("alt", "Home");
 	div.setAttribute("title", "Home");
 	div.id = "logodiv";
-	logo.setAttribute("src", "../images/Websiteicon.svg");
+	logo.setAttribute("data", "../images/Websiteicon.svg");
+	logo.setAttribute("type", "image/svg+xml");
 	//logo.setAttribute("type", "image/svg+xml");
 	div.appendChild(logo);
 	nav.parentNode.insertBefore(div, nav);

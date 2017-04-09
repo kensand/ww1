@@ -9,6 +9,25 @@ function addResizeEvent(func){
 }
 
 
+function showElement(id, displayType){
+	document.getElementById(id).style.display = displayType;
+}
+
+function mapFunction(container, element){
+	hideChildren(container);
+	showElement(element, "block");
+
+}
+
+
+
+
+/* 
+
+MODAL
+
+*/
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
         var content = document.getElementById("content");
@@ -65,3 +84,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
 
 });
+
