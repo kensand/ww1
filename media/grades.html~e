@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+  
+  <nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      World War 1: Unraveled - Home
+    </h1>
+  </div>
+
+  
+
+	
+
+
+<div class="content" style="display:block;">
+    
+  </div>
+
+<footer id="footer">
+  
+  <script type="text/javascript" src="../js/jsbn/prng4.js"></script>
+  <script type="text/javascript" src="../js/jsbn/rng.js"></script>
+  <script type="text/javascript" src="../js/jsbn/jsbn.js"></script>
+  <script type="text/javascript" src="../js/jsbn/jsbn2.js"></script>
+  <script type="text/javascript" src="../js/jsbn/rsa.js"></script>
+  <script type="text/javascript" src="../js/jsbn/rsa2.js"></script>
+  <script type="text/javascript" src="../js/grades.js"></script>
+  
+    <div>
+      <h2>Generate Student Key</h2>
+      <label for="privKey1">Enter Teacher Key:</label>
+      <textarea name="privKey1" id="privKey1"></textarea>
+      <br/>
+      <button id="studKeyButton">Generate Student Key</button>
+      <br/>
+      <label for="studKey1">Give Your Students This Key:</label>
+      <textarea name="studKey1" id="studKey1"></textarea>
+    </div>
+
+    <script>
+      var button = document.getElementById("studKeyButton");
+      button.onclick = function(){
+      var priv = document.getElementById("privKey1");
+      var pub = document.getElementById("studKey1");
+      var rsa = generate();
+      pub.value = linebrk(rsa.n.toString(16),64);
+      priv.value = linebrk(rsa.d.toString(16),64);
+      
+      }
+    </script>
+
+    <hr/>
+    <div>
+      <h2>Encode Student Data</h2>
+      
+      <label for="studKey2">Student Key:</label>
+      <textarea name="studKey2" id="studKey2"></textarea>
+      <br/>
+      <label for="studText1">Student Text:</label>
+      <textarea name="studText1" id="studText1"></textarea>
+      <br/>
+      <button id="encodeButton">Encode Student Text</button>
+      <br/>
+      <label for="encodedText">Decoded Text:</label>
+      <textarea name="encodedText" id="encodedText"></textarea>
+    </div>
+
+    <script>
+      var button = document.getElementById("encodeButton");
+      
+      button.onclick = function(){
+      var enc = document.getElementById("encodedText");
+      var pub = document.getElementById("studKey2");
+      var text = document.getElementById("studText1");
+      enc.value = encode(text.value, pub.value);
+      
+      }
+    </script>
+    
+    <hr/>
+    <div>
+      <h2>Decode Student Data</h2>
+      <label for="privKey2">Teacher Key:</label>
+      <textarea  name="privKey2" id="privKey2"></textarea>
+      <br/>
+      <label for="studKey3">Student Key:</label>
+      <textarea name="studKey3" id="studKey3"></textarea>
+      <label for="studText2">Student Text:</label>
+      <textarea name="studText2" id="studText2"></textarea>
+      <br/>
+      <button id="decodeButton">Decode Student Text</button>
+      <br/>
+      <label for="decodedText">Decoded Text:</label>
+      <textarea name="decodedText" id="decodedText"></textarea>
+    </div>
+
+    <script>
+      var button = document.getElementById("decodeButton");
+      
+      button.onclick = function(){
+      var enc = document.getElementById("decodedText");
+      var priv = document.getElementById("privKey2");
+      var pub = document.getElementById("studKey2");
+      var text = document.getElementById("studText1");
+      var res = decode(text.value, priv.value, pub.value);
+      if(res == null) {
+      enc.value= "*** Invalid Ciphertext ***";
+      
+      }
+      else {
+      enc.value = res;
+      
+      }
+      
+      }
+    </script>
+    
+
+   
+    
+  </footer>
+</body>
+
+</html>
+
