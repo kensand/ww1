@@ -13,6 +13,14 @@ function showElement(id, displayType){
 	document.getElementById(id).style.display = displayType;
 }
 
+function hideChildren(container){
+    var cont = document.getElementById(container);
+    for(var i = 0; i < cont.childNodes.length; i++){
+	cont.childNodes[i].style.display = "none";
+    }
+}
+    
+
 function mapFunction(container, element){
 	hideChildren(container);
 	showElement(element, "block");

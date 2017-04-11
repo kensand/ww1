@@ -12,6 +12,10 @@ body {
     
 }
 
+textarea{
+    width:50%;
+    height:10em;
+}
 a{
     color:black;
 }
@@ -61,12 +65,16 @@ nav div{
     color:white;
 }
 div{
-    border-radius:2%;
+    //border-radius:2%;
    }
 .navSection{
     display:none;
     background-color:#46391e;
     color:white;
+}
+
+#logodiv{
+    //border:1px solid black;
 }
 
 h6{
@@ -115,6 +123,9 @@ hr{
     border-radius:1em;
     display:block;
 }
+#chapterContainer{
+    border:0px;
+}
 
 .contentImg{
     display:inline-block;
@@ -123,19 +134,20 @@ hr{
 .lgWidth{
     width:80%;
 }
-.medWidth{
-    width:40%;
+.mdWidth{
+    width:30%;
 }
 .smWidth{
     width:20%;
 }
-.content{
+#content{
     width:100%;
     text-align:center;
     display:inline-block;
 }
 
-.content p{
+
+#content p{
     text-indent:2em;
 }
 #footer{
@@ -183,7 +195,7 @@ hr{
     }
     #logodiv{
 	display:block;
-	width:10%;
+	width:15%;
 	float:left;
 	cursor:pointer;
     }
@@ -330,3 +342,62 @@ border-radius:4px;
 }
 
 
+
+
+
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align:center;
+}
+
+/* Modal Content/Box */
+#modalContent {
+    background-color: #a6997e;
+    margin: auto;//15% auto; /* 15% from the top and centered */
+    margin-top:20px;
+    padding: 3%;//20px;
+    padding-top:1%;
+    border: 1px solid #888;
+    display:inline-block;
+    text-align:initial;
+    border-radius:5px;
+    //width: 80%; /* Could be more or less, depending on screen size */
+    
+}
+
+/* The Close Button */
+#close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    display:block;
+    text-align:right;
+}
+
+#modalImg{
+    max-width: 85vw;
+    //max-height: 85vh;
+    min-width:50vw;
+    display:block;
+    margin:auto;
+    padding:2%;
+    //height:90%;
+    //width:90%;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

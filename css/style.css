@@ -25,7 +25,9 @@ a:hover{
 a:visited{
     color:black;
 }
-
+.hide{
+    display:none;
+}
 .background{
     background-color:#667306;
 }
