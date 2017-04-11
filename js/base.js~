@@ -13,6 +13,22 @@ function showElement(id, displayType){
 	document.getElementById(id).style.display = displayType;
 }
 
+function hideChildren(container){
+    var cont = document.getElementById(container);
+<<<<<<< HEAD
+    var l = cont.getElementsByClassName('hide');
+    for(var i = 0; i < l.length; i++){
+	l[i].style.display = "none";
+=======
+    console.log(cont);
+    for(var i = 0; i < cont.childNodes.length; i++){
+	console.log(cont.childNodes);
+	cont.childNodes[i].style.display = "none";
+>>>>>>> e6a26b724a949087523d3fd0b5a2049c2b59883f
+    }
+}
+    
+
 function mapFunction(container, element){
 	hideChildren(container);
 	showElement(element, "block");
