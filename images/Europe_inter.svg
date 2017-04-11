@@ -1494,20 +1494,20 @@
            cx="754"
            cy="18"
            r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_7_cont');"/>
+	   onclick="window.parent.mapFunction('eurMapCont', 'euro_7_cont');"/>
         <circle
            id="euro_8"
            cx="769"
            cy="129"
            r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_8_cont');"
+	   onclick="window.parent.mapFunction('eurMapCont', 'euro_8_cont');"
 	   />
         <circle
            id="euro_1"
            cx="547"
            cy="9"
            r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_1_cont');"/>
+	   onclick="window.parent.mapFunction('eurMapCont', 'euro_1_cont');"/>
         <circle
            id="euro_2"
            cx="549"
@@ -1525,19 +1525,19 @@
            cx="622"
            cy="46"
            r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_4_cont');"/>
+	   onclick="window.parent.mapFunction('eurMapCont', 'euro_4_cont');"/>
         <circle
            id="euro_5"
            cx="659"
            cy="65"
            r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_5_cont');"/>
+	   onclick="window.parent.mapFunction('eurMapCont', 'euro_5_cont');"/>
         <circle
            id="euro_6"
            cx="709"
            cy="119"
            r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_6_cont');"/>
+	   onclick="window.parent.mapFunction('eurMapCont', 'euro_6_cont');"/>
       </g>
       <g
          id="Text"
