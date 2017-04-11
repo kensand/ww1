@@ -250,8 +250,7 @@
   <g
      id="map_africa"
      transform="matrix(1.0000067,0,0,0.98660777,-0.00187399,8.2719378)"
-     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1"
-     onclick="window.top.location='index.html';">
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
     <g
        id="Group"
        transform="translate(-882,-359)">
@@ -1486,20 +1485,21 @@
       <g
          id="Ovals"
          transform="translate(506,194)"
-         style="fill:#1fbb50;stroke:url(#radialGradient4510);stroke-width:2">
+         style="fill:#1fbb50;stroke:url(#radialGradient4510);stroke-width:2;cursor:pointer;">
         <circle
            id="afri_1"
            cx="536"
            cy="463"
            r="9"
-           style="stroke:url(#radialGradient4496)" />
+           style="stroke:url(#radialGradient4496)"
+	       onclick="window.parent.mapFunction('afrMapCont', 'africa_1_cont');" />
         <circle
            id="afri_2"
            cx="622"
            cy="439"
            r="9"
            style="stroke:url(#radialGradient4498)"
-           onclick="window.top.location='index.html';" />
+	       onclick="window.parent.mapFunction('afrMapCont', 'africa_2_cont');" />
         <circle
            id="afri_7"
            cx="779"
@@ -1507,35 +1507,35 @@
            r="9"
            style="stroke:url(#radialGradient4500)"
            inkscape:label="#afri_7"
-           onclick="window.top.location='index.html';" />
+	       onclick="window.parent.mapFunction('afrMapCont', 'africa_7_cont');" />
         <circle
            id="afri_5"
            cx="648"
            cy="635"
            r="9"
            style="stroke:url(#radialGradient4502)"
-           onclick="window.top.location='index.html';" />
+	       onclick="window.parent.mapFunction('afrMapCont', 'africa_5_cont');" />
         <circle
            id="afri_6"
            cx="657"
            cy="724"
            r="9"
            style="stroke:url(#radialGradient4504)"
-           onclick="window.top.location='index.html';" />
+	       onclick="window.parent.mapFunction('afrMapCont', 'africa_6_cont');" />
         <circle
            id="afri_3"
            cx="797"
            cy="507"
            r="9"
            style="stroke:url(#radialGradient4506)"
-           onclick="window.top.location='index.html';" />
+	       onclick="window.parent.mapFunction('afrMapCont', 'africa_3_cont');" />
         <circle
            id="afri_4"
            cx="846"
            cy="542"
            r="9"
            style="stroke:url(#radialGradient4508)"
-           onclick="window.top.location='index.html';" />
+	       onclick="window.parent.mapFunction('afrMapCont', 'africa_4_cont');" />
       </g>
     </g>
   </g>
