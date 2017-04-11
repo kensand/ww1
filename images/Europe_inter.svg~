@@ -1487,57 +1487,47 @@
          transform="translate(506.000000, 194.000000)"
          stroke="url(#radialGradient-1)"
          stroke-width="2"
-         fill="#1FBB50"
-	 style="cursor:pointer;">
+         fill="#1FBB50">
         <circle
            id="euro_7"
            cx="754"
            cy="18"
-           r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_7_cont');"/>
+           r="9" />
         <circle
            id="euro_8"
            cx="769"
            cy="129"
-           r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_8_cont');"
-	   />
+           r="9" />
         <circle
            id="euro_1"
            cx="547"
            cy="9"
-           r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_1_cont');"/>
+           r="9" />
         <circle
            id="euro_2"
            cx="549"
            cy="92"
-           r="9"
-	   onclick="window.parent.mapFunction('eurMapCont', 'euro_2_cont');"/>
+           r="9" />
         <circle
            id="euro_3"
            cx="612"
            cy="134"
-           r="9"
-	   onclick="window.parent.mapFunction('eurMapCont', 'euro_3_cont');"/>
+           r="9" />
         <circle
            id="euro_4"
            cx="622"
            cy="46"
-           r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_4_cont');"/>
+           r="9" />
         <circle
            id="euro_5"
            cx="659"
            cy="65"
-           r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_5_cont');"/>
+           r="9" />
         <circle
            id="euro_6"
            cx="709"
            cy="119"
-           r="9"
-	   onclick="mapFunction('eurMapCont', 'euro_6_cont');"/>
+           r="9" />
       </g>
       <g
          id="Text"

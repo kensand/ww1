@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!doctype html>
 
 <html lang="en">
@@ -21,6 +21,7 @@
   </nav>
   <div id="titlediv">
     <h1 id="title">
+
       Media
     </h1>
   </div>
@@ -30,7 +31,7 @@
 	
 
 
-<div class="content">
+<div class="content" style="display:block;">
     <object data="../images/europe1914.svg" type="image/svg+xml" class="largeMap">
       <img class="largeMap" src="../images/europe1914.png"/>
     </object>
@@ -43,49 +44,3 @@
 
 </html>
 
-=======
-<!doctype html>
-
-<html lang="en">
-
-  <head>
-
-    <title>World War 1:Unraveled</title>
-
-    <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-
-    <script type="text/javascript" src="../js/base.js"></script>
-    <script type="text/javascript" src="../js/nav.js"></script>
-    <script type="text/javascript" src="../js/footer.js"></script>
-  </head>
-
-  
-  <nav id="nav">
-  </nav>
-  <div id="titlediv">
-    <h1 id="title">
-      Media
-    </h1>
-  </div>
-
-  
-
-	
-
-
-<div class="content">
-    <object data="../images/europe1914.svg" type="image/svg+xml" class="largeMap">
-      <img class="largeMap" src="../images/europe1914.png"/>
-    </object>
-  </div>
-
-  <footer id="footer">
-    
-  </footer>
-</body>
-
-</html>
-
->>>>>>> 4eaa5215ba0f5876937c0c53f59a8c5fe121edac
