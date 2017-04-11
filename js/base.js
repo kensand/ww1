@@ -14,7 +14,7 @@ function showElement(id, displayType){
 }
 
 function hideChildren(container){
-    var cont = document.getElementById(container);]
+    var cont = document.getElementById(container);
     console.log(cont);
     for(var i = 0; i < cont.childNodes.length; i++){
 	console.log(cont.childNodes);
