@@ -258,7 +258,7 @@
                 <g id="path-17"></g>
                 <rect id="path-17" stroke="#000000" stroke-width="2" fill="#936DE2" fill-rule="nonzero" x="0" y="112" width="16" height="16"></rect>
             </g>
-            <g id="africa_buttons" transform="translate(94.000000, 114.000000)" style="cursor:pointer;">
+            <g id="africa_buttons" transform="translate(94.000000, 114.000000)" style="cursor:pointer">
                 <g id="afri_1" 
                    filter="url(#filter-33)" 
                    transform="translate(29.000000, 123.000000)" 
