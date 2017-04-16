@@ -258,7 +258,9 @@
                 <g id="path-17"></g>
                 <rect id="path-17" stroke="#000000" stroke-width="2" fill="#936DE2" fill-rule="nonzero" x="0" y="112" width="16" height="16"></rect>
             </g>
-            <g id="africa_buttons" transform="translate(94.000000, 114.000000)" style="cursor:pointer;">
+            <g id="africa_buttons" 
+               transform="translate(94.000000, 114.000000)" 
+               style="cursor:pointer;">
                 <g id="afri_1" 
                    filter="url(#filter-33)" 
                    transform="translate(29.000000, 123.000000)" 
@@ -269,37 +271,37 @@
                         <polygon id="Star" fill="url(#linearGradient-35)" points="9.43708284 13.7964844 6.18427367 17.352976 6.39900961 12.5380732 1.58410682 12.7528092 5.14059847 9.5 1.58410682 6.24719082 6.39900961 6.46192676 6.18427367 1.64702397 9.43708284 5.20351562 12.689892 1.64702397 12.4751561 6.46192676 17.2900589 6.24719082 13.7335672 9.5 17.2900589 12.7528092 12.4751561 12.5380732 12.689892 17.352976"></polygon>
                     </g>
                 </g>
-                <g id="afri_2" filter="url(#filter-36)" transform="translate(89.000000, 104.000000)">
+                <g id="afri_2" filter="url(#filter-36)" transform="translate(89.000000, 104.000000)" onclick="window.parent.mapFunction('afrMapCont', 'africa_2_cont');">
                     <g id="africa_buttons">
                         <circle id="button" stroke="#F6A623" fill="url(#linearGradient-34)" cx="10" cy="10" r="10"></circle>
                         <polygon id="Star" fill="url(#linearGradient-35)" points="9.43708284 13.7964844 6.18427367 17.352976 6.39900961 12.5380732 1.58410682 12.7528092 5.14059847 9.5 1.58410682 6.24719082 6.39900961 6.46192676 6.18427367 1.64702397 9.43708284 5.20351562 12.689892 1.64702397 12.4751561 6.46192676 17.2900589 6.24719082 13.7335672 9.5 17.2900589 12.7528092 12.4751561 12.5380732 12.689892 17.352976"></polygon>
                     </g>
                 </g>
-                <g id="afri_3" filter="url(#filter-37)" transform="translate(238.000000, 162.000000)">
+                <g id="afri_3" filter="url(#filter-37)" transform="translate(238.000000, 162.000000)" onclick="window.parent.mapFunction('afrMapCont', 'africa_3_cont');">
                     <g id="africa_buttons">
                         <circle id="button" stroke="#F6A623" fill="url(#linearGradient-34)" cx="10" cy="10" r="10"></circle>
                         <polygon id="Star" fill="url(#linearGradient-35)" points="9.43708284 13.7964844 6.18427367 17.352976 6.39900961 12.5380732 1.58410682 12.7528092 5.14059847 9.5 1.58410682 6.24719082 6.39900961 6.46192676 6.18427367 1.64702397 9.43708284 5.20351562 12.689892 1.64702397 12.4751561 6.46192676 17.2900589 6.24719082 13.7335672 9.5 17.2900589 12.7528092 12.4751561 12.5380732 12.689892 17.352976"></polygon>
                     </g>
                 </g>
-                <g id="afri_4" filter="url(#filter-38)" transform="translate(279.000000, 181.000000)">
+                <g id="afri_4" filter="url(#filter-38)" transform="translate(279.000000, 181.000000)" onclick="window.parent.mapFunction('afrMapCont', 'africa_4_cont');">
                     <g id="africa_buttons">
                         <circle id="button" stroke="#F6A623" fill="url(#linearGradient-34)" cx="10" cy="10" r="10"></circle>
                         <polygon id="Star" fill="url(#linearGradient-35)" points="9.43708284 13.7964844 6.18427367 17.352976 6.39900961 12.5380732 1.58410682 12.7528092 5.14059847 9.5 1.58410682 6.24719082 6.39900961 6.46192676 6.18427367 1.64702397 9.43708284 5.20351562 12.689892 1.64702397 12.4751561 6.46192676 17.2900589 6.24719082 13.7335672 9.5 17.2900589 12.7528092 12.4751561 12.5380732 12.689892 17.352976"></polygon>
                     </g>
                 </g>
-                <g id="afri_5" filter="url(#filter-39)" transform="translate(219.000000, 207.000000)">
+                <g id="afri_5" filter="url(#filter-39)" transform="translate(219.000000, 207.000000)" onclick="window.parent.mapFunction('afrMapCont', 'africa_5_cont');">
                     <g id="africa_buttons">
                         <circle id="button" stroke="#F6A623" fill="url(#linearGradient-34)" cx="10" cy="10" r="10"></circle>
                         <polygon id="Star" fill="url(#linearGradient-35)" points="9.43708284 13.7964844 6.18427367 17.352976 6.39900961 12.5380732 1.58410682 12.7528092 5.14059847 9.5 1.58410682 6.24719082 6.39900961 6.46192676 6.18427367 1.64702397 9.43708284 5.20351562 12.689892 1.64702397 12.4751561 6.46192676 17.2900589 6.24719082 13.7335672 9.5 17.2900589 12.7528092 12.4751561 12.5380732 12.689892 17.352976"></polygon>
                     </g>
                 </g>
-                <g id="afri_6" filter="url(#filter-40)" transform="translate(108.000000, 250.000000)">
+                <g id="afri_6" filter="url(#filter-40)" transform="translate(108.000000, 250.000000)" onclick="window.parent.mapFunction('afrMapCont', 'africa_6_cont');">
                     <g id="africa_buttons">
                         <circle id="button" stroke="#F6A623" fill="url(#linearGradient-34)" cx="10" cy="10" r="10"></circle>
                         <polygon id="Star" fill="url(#linearGradient-35)" points="9.43708284 13.7964844 6.18427367 17.352976 6.39900961 12.5380732 1.58410682 12.7528092 5.14059847 9.5 1.58410682 6.24719082 6.39900961 6.46192676 6.18427367 1.64702397 9.43708284 5.20351562 12.689892 1.64702397 12.4751561 6.46192676 17.2900589 6.24719082 13.7335672 9.5 17.2900589 12.7528092 12.4751561 12.5380732 12.689892 17.352976"></polygon>
                     </g>
                 </g>
-                <g id="afri_7" filter="url(#filter-41)" transform="translate(127.000000, 323.000000)">
+                <g id="afri_7" filter="url(#filter-41)" transform="translate(127.000000, 323.000000)" onclick="window.parent.mapFunction('afrMapCont', 'africa_7_cont');">
                     <g id="africa_buttons">
                         <circle id="button" stroke="#F6A623" fill="url(#linearGradient-34)" cx="10" cy="10" r="10"></circle>
                         <polygon id="Star" fill="url(#linearGradient-35)" points="9.43708284 13.7964844 6.18427367 17.352976 6.39900961 12.5380732 1.58410682 12.7528092 5.14059847 9.5 1.58410682 6.24719082 6.39900961 6.46192676 6.18427367 1.64702397 9.43708284 5.20351562 12.689892 1.64702397 12.4751561 6.46192676 17.2900589 6.24719082 13.7335672 9.5 17.2900589 12.7528092 12.4751561 12.5380732 12.689892 17.352976"></polygon>
