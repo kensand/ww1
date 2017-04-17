@@ -31,9 +31,9 @@
     
 
 
-    <div id="content" style="">
+    <div id="content" style="display:block;width:85%;float:right;">
       <div id="euroMap" class="map">
-	<object data="../images/Europe_inter.svg" type="image/svg+xml" class="largeMap" style="max-height:65vh">
+	<object data="../images/Europe_inter.svg" type="image/svg+xml" class="largeMap">
 	  <!--<img class="largeMap" src="../images/europe1914.png"/>-->
 	  <p>If you can see this message, your browser doesn't support SVG's.</p>
 	</object>
