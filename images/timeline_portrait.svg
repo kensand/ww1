@@ -24,7 +24,7 @@
             <rect id="timeline_branch_5" fill="#000000" x="7080" y="2750" width="200" height="1200"></rect>
             <rect id="timeline_branch_6" fill="#000000" x="8220" y="1250" width="200" height="1200"></rect>
             <g id="Chapter_1_button" transform="translate(2080.000000, 706.000000) rotate(-90.000000) translate(-2080.000000, -706.000000) translate(1536.000000, 162.000000)">
-                <mask id="mask-2" fill="white">
+                <mask id="mask-2" fill="white" onclick="window.parent.location='../chapter1/summary.html'">
                     <use xlink:href="#path-1"></use>
                 </mask>
                 <use id="Mask" stroke="#000000" stroke-width="100" xlink:href="#path-1"></use>
