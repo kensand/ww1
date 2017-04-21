@@ -59,7 +59,9 @@
      style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
     <g
        id="Logo"
-       transform="translate(5,5)">
+       transform="translate(5,5)"
+       onclick="window.parent.location='../home/index.html'"
+       style="cursor:pointer;">
       <ellipse
          id="Oval"
          cx="278.94562"
