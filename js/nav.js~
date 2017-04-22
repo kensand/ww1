@@ -26,14 +26,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var div = document.createElement("div");
     var logo = document.createElement("object");
+    //var a = document.createElement("a");
     logo.id = "logo";
     div.onclick = function(){window.location = "../index.html";};//setAttribute("href", "../index.html");
+    div.href = "../index.html";
     div.setAttribute("alt", "Home");
     div.setAttribute("title", "Home");
     div.id = "logodiv";
     logo.setAttribute("data", "../images/Websiteicon.svg");
     logo.setAttribute("type", "image/svg+xml");
     //logo.setAttribute("type", "image/svg+xml");
+
     div.appendChild(logo);
     nav.parentNode.insertBefore(div, nav);
     
@@ -305,16 +308,56 @@ document.addEventListener("DOMContentLoaded", function(event) {
     nav.appendChild(label);
 
     //media navlabel
-    var a = document.createElement("a");
+    //var a = document.createElement("a");
     label = document.createElement("div");
     label.id = "Media";
     label.className = "navLabel";
-    a.setAttribute("href", "../media/index.html");
+    //a.setAttribute("href", "../media/index.html");
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Media"));
     label.appendChild(h);
-    a.appendChild(label);	
-    nav.appendChild(a);
+
+    /*create Chapter container*/
+    var mcont = document.createElement("div");
+    mcont.id = "mediaContainer";
+
+    var msection;
+    var mchap;
+
+    /*Maps*/
+    mchap = document.createElement("div");
+    mchap.className = "navMedia";
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Maps"));
+    mchap.appendChild(h);
+
+    //africamap
+    msection = document.createElement("div");
+    msection.className = "navMSection"
+    msection.setAttribute("href", "../media/africamap.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Africa"));
+    msection.appendChild(h);
+    mchap.appendChild(msection);
+    
+    //europemap
+    msection = document.createElement("div");
+    msection.className = "navMSection"
+    msection.setAttribute("href", "../media/europemap.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Europe"));
+    msection.appendChild(h);
+    mchap.appendChild(msection);
+
+
+    mcont.appendChild(mchap);
+    label.appendChild(mcont);
+
+    
+    //a.appendChild(label);	
+    nav.appendChild(label);
+
+    
 
 
     
@@ -342,7 +385,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    }
 	    
 	}
+	var wf = window.onclick;
 	window.onclick = function(event){
+	    if(wf){
+		wf(event);
+	    }
             var nav = document.getElementById("nav");
 	    var menu = document.getElementById("menuButton");
 	    var chapLabel = document.getElementById("chapters");
@@ -438,7 +485,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    
 	}
 	if(!MOBILE){
+	    var wf =  window.onclick;
 	    window.onclick = function(event){
+		if(wf){
+		wf(event);
+	    }
 		var chapLabel = document.getElementById("chapters");
 		if (event.target != chapLabel) {
                     chapLabel.close();
@@ -448,13 +499,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		console.log("here");
 		window.onclick = null;
             }
-	    this.state = 'Open';
+	    
 	}
+	this.state = 'Open';
     }
 
     /*build menu for each chapter in the ChapterLabel menu*/
 
     chapLabel.onclick = function(e){
+
+	var la = this.parentNode.getElementsByClassName("navLabel");
+	for(var i = 0; i< la.length; i++){
+	    if(la[i].close && la[i] != this){
+		la[i].close();
+	    }
+	}
 	
 	if(document.getElementById("chapters").state == 'Open'){
 	    document.getElementById("chapters").close();
@@ -514,6 +573,144 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	
 	
 	var sections = this.getElementsByClassName("navSection");
+	for(var j = 0; j < sections.length; j++){
+	    //console.log(sections);
+	    sections[j].onclick = function(e){
+		window.location = this.getAttribute('href');
+		if (!e)
+		    var e = window.event;
+		e.cancelBubble = true;
+		if (e.stopPropagation)
+		    e.stopPropagation();
+		return false;
+	    }
+	}
+    }
+
+
+
+
+
+
+
+
+
+
+    
+    
+    /*build mediaLabel menu */
+    var chapLabel = document.getElementById("Media");
+    chapLabel.state = 'Closed';
+    
+    
+    chapLabel.close = function(){
+	//document.getElementById("chapterContainer").style.display = "none";
+	var chaps = document.getElementById("mediaContainer").getElementsByClassName("navMedia");
+	for(var i = 0; i < chaps.length; i++){
+	    chaps[i].close();
+	    chaps[i].style.display = 'none';
+	    
+	}
+	
+	this.state='Closed';
+    }
+
+    
+    chapLabel.open = function(){
+	
+	var chaps = document.getElementById("mediaContainer").getElementsByClassName("navMedia");
+	for(var i = 0; i < chaps.length; i++){
+	    chaps[i].style.display = 'block';
+	    
+	}
+	if(!MOBILE){
+	    var wf =  window.onclick;
+	    window.onclick = function(event){
+		if(wf){
+		    wf(event);
+		}
+		var chapLabel = document.getElementById("Media");
+		if (event.target != chapLabel) {
+                    chapLabel.close();
+		    
+		}
+	   
+		console.log("here");
+		window.onclick = null;
+            }
+	    
+	}
+	this.state = 'Open';
+    }
+
+    /*build menu for each chapter in the ChapterLabel menu*/
+
+    chapLabel.onclick = function(e){
+	var la = this.parentNode.getElementsByClassName("navLabel");
+	for(var i = 0; i< la.length; i++){
+	    if(la[i].close && la[i] != this){
+		la[i].close();
+	    }
+	}
+	
+	if(document.getElementById("Media").state == 'Open'){
+	    document.getElementById("Media").close();
+	    console.log('closing chaplabel');
+	}
+	else{
+	    document.getElementById("Media").open();
+	    console.log('opening chaplabel');
+	}
+	
+	if (!e)
+	    var e = window.event;
+	e.cancelBubble = true;
+	if (e.stopPropagation)
+	    e.stopPropagation();
+	return false;
+    }
+    
+    
+    var chaps = document.getElementById("mediaContainer").getElementsByClassName("navMedia");
+    for(var i = 0; i < chaps.length; i++){
+	chaps[i].state = "Closed";
+	chaps[i].close = function(){
+	    var sections = this.getElementsByClassName("navMSection");
+	    for(var j = 0; j < sections.length; j++){
+		//console.log(sections);
+		sections[j].style.display = "none";
+	    }
+	    this.state = "Closed";
+	}
+
+	chaps[i].open = function(){
+	    //console.log('opening call');
+	    var sections = this.getElementsByClassName("navMSection");
+	    for(var j = 0; j < sections.length; j++){
+		//console.log(sections);
+		sections[j].style.display = "block";
+	    }
+	    this.state = "Open";
+	}
+	chaps[i].onclick = function(e){
+	    if(this.state == "Open"){
+		//console.log('calling close');
+		this.close();
+	    }
+	    else{
+		var chaps = document.getElementById("Media");
+		chaps.close();
+		chaps.open();
+		this.open();
+	    }
+	    if (!e) var e = window.event;
+	    e.cancelBubble = true;
+	    if (e.stopPropagation) e.stopPropagation();
+	    return false;
+	}
+	
+	
+	var sections = this.getElementsByClassName("navMSection");
 	for(var j = 0; j < sections.length; j++){
 	    //console.log(sections);
 	    sections[j].onclick = function(e){

@@ -14,6 +14,9 @@ var quiz = [{question:"Why did Germany stop its unrestricted submarine warfare?"
 	    {question:"What was the Treaty of London?",answers:["Italy joining the Entente","granting Austro-Hungarian land to Italy after the War","granting Austro-Hungarian land to Serbia and Montenegro after the war","All of the other choices"], solution:3},
 	       ];
 
+
+var input = [];
+
 var questionTime = 3000;
 //var questionNumber = 0;
 var correctAnswers = 0;
@@ -23,71 +26,91 @@ var answer = null;
 
 //beginning
 var empty = function(cont){
-        while (cont.hasChildNodes()) {
-	            cont.removeChild(cont.lastChild);
-        }
+    while (cont.hasChildNodes()) {
+	cont.removeChild(cont.lastChild);
+    }
 }
 
 var loadQuestion = function(cont, number){
-        empty(cont);
-        var div = document.createElement("div");
-        var q = document.createElement("h1");
+    empty(cont);
+    var div = document.createElement("div");
+    var q = document.createElement("h1");
 
-        
-        q.appendChild(document.createTextNode(quiz[number].question));
-        div.appendChild(q);
-        for(var j = 0; j < quiz[number].answers.length; j++){
-	            
-	            var button = document.createElement("a");
-	            q = document.createElement("h1");
-	            q.appendChild(document.createTextNode(quiz[number].answers[j]));
-	            button.appendChild(q);
-                button.className = "quizButton";
-	            button.ans = j;
-	            button.onclick = function(){
-	                    submitAnswer(this.ans, number);
-	                    number++;
-	                    if(number >=quiz.length){
-		                        endQuiz(cont);
-	                    }
-	                    else{
-		                        loadQuestion(cont, number);
-	                    }
-	            }
-	            div.appendChild(button);
-        }
-        cont.appendChild(div);
-        answer = null;
+    
+    q.appendChild(document.createTextNode(quiz[number].question));
+    div.appendChild(q);
+    for(var j = 0; j < quiz[number].answers.length; j++){
+	
+	var button = document.createElement("a");
+	q = document.createElement("h1");
+	q.appendChild(document.createTextNode(quiz[number].answers[j]));
+	q.className+="noSelect";
+	button.appendChild(q);
+        button.className = "quizButton";
+	button.ans = j;
+	button.onclick = function(){
+	    submitAnswer(this.ans, number);
+	    number++;
+	    if(number >=quiz.length){
+		endQuiz(cont);
+	    }
+	    else{
+		loadQuestion(cont, number);
+	    }
+	}
+	div.appendChild(button);
+    }
+    cont.appendChild(div);
+    answer = null;
 }
 
 var submitAnswer = function(ans, questionNumber){
-        if(ans == quiz[questionNumber].solution){
-	            correctAnswers++;
-        }
+    if(ans == quiz[questionNumber].solution){
+	correctAnswers++;
+    }
+    input.push(ans);
 }
 
 var endQuiz = function(cont){
-        empty(cont);
-        var div = document.createElement("div");
-        var q = document.createElement("h1");    
-        q.appendChild(document.createTextNode("Your score:" + correctAnswers.toString() + " out of " + quiz.length.toString()));
-        div.appendChild(q);
-        cont.appendChild(div);
+    empty(cont);
+    var div = document.createElement("div");
+    var q = document.createElement("h1");    
+    q.appendChild(document.createTextNode("Your score:" + correctAnswers.toString() + " out of " + quiz.length.toString()));
+    div.appendChild(q);
+    cont.appendChild(div);
+    for(var i = 0; i < quiz.length; i++){
+	var div = document.createElement("div");
+	var q = document.createElement("h2");    
+	q.appendChild(document.createTextNode("Question " + (i+1).toString()));
+	
+	div.appendChild(q);
+	var q = document.createElement("p");    
+	q.appendChild(document.createTextNode("Your answer: " + quiz[i].answers[input[i]]));
+	
+	div.appendChild(q);
+	var q = document.createElement("p");    
+	q.appendChild(document.createTextNode("Correct answer: " + quiz[i].answers[quiz[i].solution]));
+	div.style.textAlign = "left";
+	div.className+="quizAns";
+	div.appendChild(q);
+	cont.appendChild(div);
+
+    }
 }
 
 var createStartButton = function(){
-        var container = document.getElementById("chapterquiz");
-        var button = document.createElement("a");
-        empty(container);
-        button.className = "quizStartButton";
-        //button.id = "quizStartButton";
-        button.appendChild(document.createTextNode("Start Quiz"));
-        
-        button.onclick = function(){
-	            loadQuestion(container, 0);
-        }
-        
-        container.appendChild(button);
+    var container = document.getElementById("chapterquiz");
+    var button = document.createElement("a");
+    empty(container);
+    button.className = "quizStartButton";
+    //button.id = "quizStartButton";
+    button.appendChild(document.createTextNode("Start Quiz"));
+    
+    button.onclick = function(){
+	loadQuestion(container, 0);
+    }
+    
+    container.appendChild(button);
 }
 
 createStartButton();

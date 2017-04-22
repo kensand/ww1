@@ -1,14 +1,11 @@
-var quiz = [{question:"Why did Europeans Colonize Africa?", answers:["Economic", "Political", "Religious", "All of the other answers"], solution:3},
-	        {question:"Why was Africa easy to conquer for Europeans?",answers:["Europeans had better military",	"Europeans had better technology", "Europeans knew African land better",	"Europeans had better military and technology"], solution:3},
-	        {question:"What Year did German Unification Occur?",answers:["1914", "1776", "1871", "1870"], solution:2},
-	        {question:"Who was the main leader of German Unification?",answers:["Otto Von Bismarck", "Adolf Hitler", "Wilhelm I", "Wilhelm II"], solution:0},
-	        {question:"Why were the Balkans Unstable?",answers:["Various Ethnic Groups", "Collapse of the Ottoman Empire", "Various Relegious Groups", "All of the other answers"], solution:3},
-	        {question:"What Country/Empire supported Serbia?",answers:["England", "Russia", "Austria-Hungary", "France"], solution:1},
-	        {question:"What year were airplanes used for Military Purpose?",answers:["1903", "1911", "1914", "1918"], solution:1},
-	        {question:"Why did Zeppelins fail as weapons in WWI?",answers:["As the war went on Airplanes became more effective than the Zeppelins", "Inaccurate due to high altitude bombing", "New incendiary ammo made Zeppelins easier to shoot down", "All of the other answers"], solution:3},
-	        {question:"Who was not part of the Triple Alliance?",answers:["Ottoman Empire", "Austria-Hungary", "Germany", "Italy"], solution:0},
-	        {question:"Which nation would switch sides during the war?",answers:["United State of America", "Netherlands", "Italy", "Russia"], solution:2},	    
-	       ];
+var quiz = [{question:"How many soldiers died during the battle of Verdun (estimated)?",answers:["143,000","162,000","305,000","254,000"], solution:2},
+{question:"In the aftermath of Verdun, how many French villages and towns were destroyed?",answers:["11","10","13","15"], solution:1},
+{question:"What made its first appearance at the Battle of the Somme?",answers:["Airships","Tanks","Airplane Bombers","Gas Weapons"], solution:1},
+{question:"What did the Battle of the Somme do to Germany's strategy?",answers:["A defensive line was formed on the western front","An invasion of Russia","A decisive german offensive in France","Germany withdrawing from Russian Front"], solution:0},
+{question:"Who was victorious in the Battle of Jutland?",answers:["German victory","Indecisive victory","British Victory","French Victory"], solution:1},
+{question:"How many Armenians were killed between 1915 and 1923",answers:["1.5 Million","1 Million","2 Million","0.5 Million"], solution:0},
+{question:"What was the impact of the Brusilov Offensive?",answers:["Massive Austro-Hungarian casualties","Forced Germany to withdraw from Verdun Offensive","Ottoman withdrawal from Black Sea","Massive Austro-Hungarian casualties and Forced Germany to withdraw from Verdun Offensive"], solution:3},
+{question:"Why did the Ottoman Empire commit genocide during WWI",answers:["To remove religious groups from the Empire","To remove revolutionaries or possible Entente Supporters","To remove ethnic groups from the Empire","All other choices"], solution:3},];
 
 
 var input = [];

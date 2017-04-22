@@ -1,14 +1,10 @@
-var quiz = [{question:"Why did Europeans Colonize Africa?", answers:["Economic", "Political", "Religious", "All of the other answers"], solution:3},
-	        {question:"Why was Africa easy to conquer for Europeans?",answers:["Europeans had better military",	"Europeans had better technology", "Europeans knew African land better",	"Europeans had better military and technology"], solution:3},
-	        {question:"What Year did German Unification Occur?",answers:["1914", "1776", "1871", "1870"], solution:2},
-	        {question:"Who was the main leader of German Unification?",answers:["Otto Von Bismarck", "Adolf Hitler", "Wilhelm I", "Wilhelm II"], solution:0},
-	        {question:"Why were the Balkans Unstable?",answers:["Various Ethnic Groups", "Collapse of the Ottoman Empire", "Various Relegious Groups", "All of the other answers"], solution:3},
-	        {question:"What Country/Empire supported Serbia?",answers:["England", "Russia", "Austria-Hungary", "France"], solution:1},
-	        {question:"What year were airplanes used for Military Purpose?",answers:["1903", "1911", "1914", "1918"], solution:1},
-	        {question:"Why did Zeppelins fail as weapons in WWI?",answers:["As the war went on Airplanes became more effective than the Zeppelins", "Inaccurate due to high altitude bombing", "New incendiary ammo made Zeppelins easier to shoot down", "All of the other answers"], solution:3},
-	        {question:"Who was not part of the Triple Alliance?",answers:["Ottoman Empire", "Austria-Hungary", "Germany", "Italy"], solution:0},
-	        {question:"Which nation would switch sides during the war?",answers:["United State of America", "Netherlands", "Italy", "Russia"], solution:2},	    
-	       ];
+var quiz = [{question:"Why did the United States enter WWI?",answers:["A German telegram to Mexico, suggesting that they declare war on the USA","Unrestricted U-boat attacks began again in 1917","Germany declared war on the United States","A German telegram to Mexico, suggesting that they declare war on the USA","Unrestricted U-boat attacks began again in 1917"], solution:3},
+{question:"What was the major cause of the Russian revolutions?",answers:["Weakening Monarchy under Nicholas II	War weariness","Communist ideology spreading","All other choices"], solution:3},
+{question:"Which revolution gave communist control of Russia?",answers:["March/Red Revolution","October /Bolshevik Revolution","February / Duma Revolution","June/Stalin Revolution"], solution:1},
+{question:"What was the importance of the Italian Front in 1917",answers:["Germany needed Austria-Hungary to keep fighting","Italians were backing off to fight in Greece Instead","It was stalemate between Austria-Hungary and Italy","Germany needed Austria-Hungary to keep fighting and It was stalemate between Austria-Hungary and Italy"], solution:3},
+{question:"Who would aid the Arabs in their revolution and fighting against the Ottomans?",answers:["Winston Churchill","T. E. Lawrence","John Maxwell","Edward Bulfin"], solution:1},
+{question:"Why did the Arabs join British Forces?",answers:["Were offered large amount of land if victorious","Opposed the Ottoman Rule","They were offered a large amount of money/wealth","Were offered large amount of land if victorious and Opposed the Ottoman Rule"], solution:3},
+{question:"What battle of Ypres is know as the battle of Passchendaele",answers:["First Battle of Ypres","Second Battle of Ypres","Third Battle of Ypres","Fourth Battle of Ypres"], solution:2},];
 
 
 var input = [];

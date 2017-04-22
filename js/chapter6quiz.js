@@ -1,14 +1,9 @@
-var quiz = [{question:"Why did Europeans Colonize Africa?", answers:["Economic", "Political", "Religious", "All of the other answers"], solution:3},
-	        {question:"Why was Africa easy to conquer for Europeans?",answers:["Europeans had better military",	"Europeans had better technology", "Europeans knew African land better",	"Europeans had better military and technology"], solution:3},
-	        {question:"What Year did German Unification Occur?",answers:["1914", "1776", "1871", "1870"], solution:2},
-	        {question:"Who was the main leader of German Unification?",answers:["Otto Von Bismarck", "Adolf Hitler", "Wilhelm I", "Wilhelm II"], solution:0},
-	        {question:"Why were the Balkans Unstable?",answers:["Various Ethnic Groups", "Collapse of the Ottoman Empire", "Various Relegious Groups", "All of the other answers"], solution:3},
-	        {question:"What Country/Empire supported Serbia?",answers:["England", "Russia", "Austria-Hungary", "France"], solution:1},
-	        {question:"What year were airplanes used for Military Purpose?",answers:["1903", "1911", "1914", "1918"], solution:1},
-	        {question:"Why did Zeppelins fail as weapons in WWI?",answers:["As the war went on Airplanes became more effective than the Zeppelins", "Inaccurate due to high altitude bombing", "New incendiary ammo made Zeppelins easier to shoot down", "All of the other answers"], solution:3},
-	        {question:"Who was not part of the Triple Alliance?",answers:["Ottoman Empire", "Austria-Hungary", "Germany", "Italy"], solution:0},
-	        {question:"Which nation would switch sides during the war?",answers:["United State of America", "Netherlands", "Italy", "Russia"], solution:2},	    
-	       ];
+var quiz = [{question:"What was the objective of the Spring Offensive?",answers:["To take finish the war on west via breaking Entente lines","To take out Italy","To to take out Entente forces by reaching English Channel","To take on Entente head on"], solution:0},
+{question:"Why were the Entente able to push back Germany in the 100 Day Offensive?",answers:["Germany was weakened after their Spring Offensive","got American and Entente reinforcements","Caught Germans by surprise with their counter attack","All other choices"], solution:3},
+{question:"When was the Armistice signed to stop the war?",answers:["11/11/1918","10/21/1919","6/28/1919","10/25/1917"], solution:0},
+{question:"Why did Germany have problems with the Versailles Peace Treaty?",answers:["They were given the reparations for a total of $31 Billion ($442 Billion Today)","Were blamed to be only one responsible for WWI (War Guilt)","Its population would not be happy if signed","All other choices"], solution:3},
+{question:"Why did Woodrow Wilson get a Nobel Prize?",answers:["For creating the League of Nations","For ensuring peace after WWI","For stopping the Ottoman Genocides","For creating the League of Nations and For ensuring peace after WWI"], solution:3},
+{question:"What were the broad goals of Wilson's 14 points",answers:["Restore territory to nations and create new nations from old ones","Create a League of Nations","Create international peace","All Choices"], solution:3},];
 
 
 var input = [];

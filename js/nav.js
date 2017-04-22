@@ -26,15 +26,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var div = document.createElement("div");
     var logo = document.createElement("object");
+    //var a = document.createElement("a");
     logo.id = "logo";
-    div.onclick = function(){window.location = "../index.html";};//setAttribute("href", "../index.html");
-    div.href = "../index.html";
+    div.onclick = function(){window.parent.location = "../index.html";};//;
+    div.setAttribute("href", "../index.html")//href = "../index.html";
     div.setAttribute("alt", "Home");
     div.setAttribute("title", "Home");
     div.id = "logodiv";
     logo.setAttribute("data", "../images/Websiteicon.svg");
     logo.setAttribute("type", "image/svg+xml");
+    logo.style.pointerEvents = "none";//silliest little thing takes hours to figure out
     //logo.setAttribute("type", "image/svg+xml");
+
     div.appendChild(logo);
     nav.parentNode.insertBefore(div, nav);
     

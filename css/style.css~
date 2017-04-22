@@ -67,7 +67,7 @@ nav div{
 }
 
 
-.navChapter{
+.navChapter, .navMedia{
     display:none;
     background-color:#76694e;
     color:white;
@@ -77,7 +77,7 @@ nav div{
 div{
     //border-radius:2%;
    }
-.navSection{
+.navSection, .navMSection{
     display:none;
     background-color:#46391e;
     color:white;
@@ -136,7 +136,7 @@ hr{
     display:block;
     max-width:30%;
 }
-#chapterContainer{
+#chapterContainer, #mediaContainer{
     border:0px;
 }
 
@@ -164,7 +164,7 @@ hr{
     text-indent:2em;
 }
 #footer{
-    displayL:inline-block;
+    display:inline-block;
     
     left:0px;
     bottom:0px;
@@ -225,14 +225,14 @@ hr{
 	border-radius:4px;
     }
     
-    .navChapter{
+    .navChapter, .navMedia{
 	padding:0em 0em 0em .5em;
 	text-indent:10%;
 	border-radius:4px;
 	
     }
     
-    .navSection{
+    .navSection, .navMSection{
 	text-indent:20%;
 	border-radius:4px;
     }
@@ -248,7 +248,7 @@ hr{
 	display:none;
 	
     }
-    #chapterContainer{
+    #chapterContainer, #mediaContainer{
 	display:block;
     }
     nav div h6{
@@ -281,23 +281,26 @@ hr{
     float:left;
     width:100%;
     background-color:#a6997e;
+    max-height:10vh;
     
     }
     #logodiv{
 	display:inline-block;
 	width:15%;
+	max-width:10vh;
 	float:left;
 	cursor:pointer;
     }
 
     #nav{
-    width:85%;
-
+	width:inherit;
+	
+    
     display:inline-block;
    
 }
     .navLabel{
-	width:15%;
+	
 	position:relative;
 	text-align:center;
 	float:left;
@@ -306,13 +309,13 @@ hr{
     .navLabel:hover{
 	background-color:#E9E9E9;
     }
-    .navChapter:hover{
+    .navChapter:hover, .navMedia:hover{
 	background-color:#C9C9C9;
     }
-    .navSection:hover{
+    .navMSection:hover, .navSection:hover{
 	background-color:#A9A9A9;
     }
-    .navLabel h6{
+    .navLabel h 6{
 	//margin:1em 0em 1em 0em;
     }
     nav{
@@ -332,7 +335,7 @@ hr{
     
     #titlediv{
 	display:table;
-	width:90%;
+	width:85%;
 	text-align:center;
     }
     
@@ -342,7 +345,7 @@ hr{
 	
     }
     
-    #chapterContainer{
+    #chapterContainer, #mediaContainer{
 	position:absolute;
 	display:block;
     }
@@ -350,13 +353,13 @@ hr{
     #menuButton{
 	display:none;
     }
-    .navChapter{
+    .navChapter, .navMedia{
 	width:8em;
 	text-align:left;
 	
     }
 
-    .navSection{
+    .navSection, .navMSection{
 	margin-left:1em;
 	text-align:left;
     }

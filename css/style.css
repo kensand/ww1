@@ -197,9 +197,21 @@ hr{
     text-align:center;
     width:100%;
 }
+.noSelect{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
 /*mobile styling*/
 @media (max-width:799px) {
-
+    
+    .smWidth{
+	width:40%;
+    }
     #logo{
     
 	float:left;
@@ -275,7 +287,9 @@ hr{
 
 /*desktop styling*/
 @media (min-width: 800px) {
-    
+    .quizAns{
+	margin:10px 20% 10px 20%;
+    }
     #logo{
     
     float:left;

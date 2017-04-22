@@ -1,14 +1,11 @@
-var quiz = [{question:"Why did Europeans Colonize Africa?", answers:["Economic", "Political", "Religious", "All of the other answers"], solution:3},
-	        {question:"Why was Africa easy to conquer for Europeans?",answers:["Europeans had better military",	"Europeans had better technology", "Europeans knew African land better",	"Europeans had better military and technology"], solution:3},
-	        {question:"What Year did German Unification Occur?",answers:["1914", "1776", "1871", "1870"], solution:2},
-	        {question:"Who was the main leader of German Unification?",answers:["Otto Von Bismarck", "Adolf Hitler", "Wilhelm I", "Wilhelm II"], solution:0},
-	        {question:"Why were the Balkans Unstable?",answers:["Various Ethnic Groups", "Collapse of the Ottoman Empire", "Various Relegious Groups", "All of the other answers"], solution:3},
-	        {question:"What Country/Empire supported Serbia?",answers:["England", "Russia", "Austria-Hungary", "France"], solution:1},
-	        {question:"What year were airplanes used for Military Purpose?",answers:["1903", "1911", "1914", "1918"], solution:1},
-	        {question:"Why did Zeppelins fail as weapons in WWI?",answers:["As the war went on Airplanes became more effective than the Zeppelins", "Inaccurate due to high altitude bombing", "New incendiary ammo made Zeppelins easier to shoot down", "All of the other answers"], solution:3},
-	        {question:"Who was not part of the Triple Alliance?",answers:["Ottoman Empire", "Austria-Hungary", "Germany", "Italy"], solution:0},
-	        {question:"Which nation would switch sides during the war?",answers:["United State of America", "Netherlands", "Italy", "Russia"], solution:2},	    
-	       ];
+var quiz = [{question:"What events lead to the foundation of Israel",answers:["Balfor Declaration for a jewish state","Sykes-Picot Agreement influence on the Middle East","Ottoman Doctrine to give Middle East to its native populations","Balfor Declaration for a jewish state and Sykes-Picot Agreement influence on the Middle East"], solution:3},
+{question:"What was a major impact of Communism/ Marxism Socialism in Russia?",answers:["Rapidly evolved Russia from Agrarian to Industrial Society","Their ideology spread with rapid success in Europe","New social programs aided population","Rapidly evolved Russia from Agrarian to Industrial Society and New social programs aided population"], solution:3},
+{question:"Even after Peace, why did World War II occur?",answers:["Germany was not demilitarized completely","League of Nations did not prevent future conflicts","Weak replacement government allowed for Hitler to rise in power","All other choices"], solution:3},
+{question:"Why did US start to become a world superpower after WWI?",answers:["Late joining of war, meant less casualties","No battles on American Soil","Major Industrialization and Economic Boom during the War","All other choices"], solution:3},
+{question:"What major nation proposed the League of Nations but never joined?",answers:["France","Britan","The United States","Germany"], solution:2},
+{question:"How many new nations existed after the Treaty of Versailles?",answers:["9","10","8","7"], solution:0},
+{question:"How many people were casualties in WWI?",answers:["Over 35 Million casualties","25 Million Casualties","Over 40 Million Casualties","Over 30 Million Casualties"], solution:0},
+];
 
 
 var input = [];
