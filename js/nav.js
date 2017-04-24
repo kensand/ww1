@@ -377,6 +377,237 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
+    /*Chapter 5*/
+    chap = document.createElement("div");
+    chap.className = "navChapter";
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Chapter 5"));
+    chap.appendChild(h);
+
+    //Summary
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter5/summary.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Summary"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    //section 1
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter5/section1.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 1"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 2
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter5/section2.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 2"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 3
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter5/section3.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 3"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 4
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter5/section4.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 4"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 5
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter5/section5.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 5"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //quiz
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter5/quiz.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Quiz"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    chapcont.appendChild(chap);
+
+
+
+
+    /*Chapter 6*/
+    chap = document.createElement("div");
+    chap.className = "navChapter";
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Chapter 6"));
+    chap.appendChild(h);
+
+    //Summary
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter6/summary.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Summary"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    //section 1
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter6/section1.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 1"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 2
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter6/section2.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 2"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 3
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter6/section3.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 3"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 4
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter6/section4.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 4"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 5
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter6/section5.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 5"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //quiz
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter6/quiz.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Quiz"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    chapcont.appendChild(chap);
+
+
+
+
+    /*Chapter 7*/
+    chap = document.createElement("div");
+    chap.className = "navChapter";
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Chapter 7"));
+    chap.appendChild(h);
+
+    //Summary
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter7/summary.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Summary"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    //section 1
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter7/section1.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 1"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 2
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter7/section2.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 2"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 3
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter7/section3.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 3"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 4
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter7/section4.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 4"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 5
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter7/section5.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 5"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //quiz
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter7/quiz.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Quiz"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    chapcont.appendChild(chap);
+
+
+
+
 
     //finish chapter navlabel appending
     label.appendChild(chapcont);
