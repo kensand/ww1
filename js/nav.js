@@ -290,6 +290,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     chapcont.appendChild(chap);
 
+
+
+
+
+
+
+
+
+
+
+
     /*Chapter 4*/
     chap = document.createElement("div");
     chap.className = "navChapter";
