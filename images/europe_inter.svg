@@ -193,7 +193,7 @@
                 <g id="euro_11" 
                    filter="url(#filter-13)" 
                    transform="translate(828.000000, 592.000000)"
-                   onclick="window.parent.mapFunction('eurMapCont', 'euro_1_cont');">
+                   onclick="window.parent.mapFunction('eurMapCont', 'euro_11_cont');">
                     <ellipse id="button" stroke="#F6A623" fill="url(#linearGradient-2)" cx="17.5" cy="17.5766551" rx="17.5" ry="17.5766551"></ellipse>
                     <polygon id="Star" fill="url(#linearGradient-3)" points="17.7459295 25.5988102 11.6379655 32.7142857 12.041186 23.0811061 3 23.5107284 9.67820392 17.0028307 3 10.4949329 12.041186 10.9245553 11.6379655 1.29137563 17.7459295 8.40685115 23.8538935 1.29137563 23.450673 10.9245553 32.4918591 10.4949329 25.8136552 17.0028307 32.4918591 23.5107284 23.450673 23.0811061 23.8538935 32.7142857"></polygon>
                 </g>
