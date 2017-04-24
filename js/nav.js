@@ -349,6 +349,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     h.appendChild(document.createTextNode("Europe"));
     msection.appendChild(h);
     mchap.appendChild(msection);
+    
+    //asiamap
+    msection = document.createElement("div");
+    msection.className = "navMSection"
+    msection.setAttribute("href", "../media/asiamap.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Asia"));
+    msection.appendChild(h);
+    mchap.appendChild(msection);
 
 
     mcont.appendChild(mchap);
