@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     /*generate nav bar*/
     var nav = document.getElementById("nav");
-    
+
     var button = document.createElement("button");
     button.id = "menuButton";
     button.className = "foreground";
@@ -40,14 +40,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     div.appendChild(logo);
     nav.parentNode.insertBefore(div, nav);
-    
+
     /*create Chapter container*/
     var chapcont = document.createElement("div");
     chapcont.id = "chapterContainer";
 
     var section;
     var chap;
-    
+
     /*Chapter 1*/
     chap = document.createElement("div");
     chap.className = "navChapter";
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     h.appendChild(document.createTextNode("Summary"));
     section.appendChild(h);
     chap.appendChild(section);
-    
+
 
     //section 1
     section = document.createElement("div");
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     chap.appendChild(section);
 
 
-    
+
 
     chapcont.appendChild(chap);
 
@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-    
-    
+
+
 
     /*Chapter 2*/
     chap = document.createElement("div");
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     h.appendChild(document.createTextNode("Summary"));
     section.appendChild(h);
     chap.appendChild(section);
-    
+
 
     //section 1
     section = document.createElement("div");
@@ -207,7 +207,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     chap.appendChild(section);
 
     chapcont.appendChild(chap);
-    
 
 
 
@@ -215,7 +214,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-    
+
+
     /*Chapter 3*/
     chap = document.createElement("div");
     chap.className = "navChapter";
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     h.appendChild(document.createTextNode("Summary"));
     section.appendChild(h);
     chap.appendChild(section);
-    
+
 
     //section 1
     section = document.createElement("div");
@@ -286,10 +286,84 @@ document.addEventListener("DOMContentLoaded", function(event) {
     h.appendChild(document.createTextNode("Quiz"));
     section.appendChild(h);
     chap.appendChild(section);
-    
+
 
     chapcont.appendChild(chap);
-    
+
+    /*Chapter 4*/
+    chap = document.createElement("div");
+    chap.className = "navChapter";
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Chapter 4"));
+    chap.appendChild(h);
+
+    //Summary
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter4/summary.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Summary"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    //section 1
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter4/section1.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 1"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 2
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter4/section2.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 2"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 3
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter4/section3.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 3"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 4
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter4/section4.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 4"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //section 5
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter4/section5.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Section 5"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+    //quiz
+    section = document.createElement("div");
+    section.className = "navSection"
+    section.setAttribute("href", "../chapter4/quiz.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Quiz"));
+    section.appendChild(h);
+    chap.appendChild(section);
+
+
+    chapcont.appendChild(chap);
+
 
 
 
@@ -340,7 +414,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     h.appendChild(document.createTextNode("Africa"));
     msection.appendChild(h);
     mchap.appendChild(msection);
-    
+
     //europemap
     msection = document.createElement("div");
     msection.className = "navMSection"
@@ -349,7 +423,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     h.appendChild(document.createTextNode("Europe"));
     msection.appendChild(h);
     mchap.appendChild(msection);
-    
+
     //asiamap
     msection = document.createElement("div");
     msection.className = "navMSection"
@@ -363,18 +437,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     mcont.appendChild(mchap);
     label.appendChild(mcont);
 
-    
-    //a.appendChild(label);	
+
+    //a.appendChild(label);
     nav.appendChild(label);
 
-    
 
 
-    
 
 
-    
-    
+
+
+
+
     function toggleMenu(){
 	console.log("function call");
 	var nav = document.getElementById("nav");
@@ -391,9 +465,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    }
 	    else if(divs[i].style.display == "block"){
 		divs[i].style.display = "none";
-		
+
 	    }
-	    
+
 	}
 	var wf = window.onclick;
 	window.onclick = function(event){
@@ -407,10 +481,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 chapLabel.close();
 		if(MOBILE)
 		    toggleMenu();
-		
-		
+
+
 	    }
-	   
+
 	    console.log("here");
             window.onclick = null;
         }
@@ -420,8 +494,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	if (e.stopPropagation)
 	    e.stopPropagation();
 	return false;
-	
-	
+
+
 	/*
 	  if(nav.style.display == ""){
 	  nav.style.display = "block";
@@ -442,7 +516,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if(divs[i].style.display != "block"){
 		    divs[i].style.display = "none";
 		}
-		
+
 	    }
 	    else{
 		divs[i].style.display = "inline-block";
@@ -463,36 +537,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	   nav.style.display = "block";
 	   }
 	 */
-	
+
     }
     addResizeEvent(navResize);
-    
+
 
 
     /*build ChapterLabel menu */
     var chapLabel = document.getElementById("chapters");
     chapLabel.state = 'Closed';
-    
-    
+
+
     chapLabel.close = function(){
 	//document.getElementById("chapterContainer").style.display = "none";
 	var chaps = document.getElementById("chapterContainer").getElementsByClassName("navChapter");
 	for(var i = 0; i < chaps.length; i++){
 	    chaps[i].close();
 	    chaps[i].style.display = 'none';
-	    
+
 	}
-	
+
 	this.state='Closed';
     }
 
-    
+
     chapLabel.open = function(){
-	
+
 	var chaps = document.getElementById("chapterContainer").getElementsByClassName("navChapter");
 	for(var i = 0; i < chaps.length; i++){
 	    chaps[i].style.display = 'block';
-	    
+
 	}
 	if(!MOBILE){
 	    var wf =  window.onclick;
@@ -503,13 +577,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var chapLabel = document.getElementById("chapters");
 		if (event.target != chapLabel) {
                     chapLabel.close();
-		    
+
 		}
-	   
+
 		console.log("here");
 		window.onclick = null;
             }
-	    
+
 	}
 	this.state = 'Open';
     }
@@ -524,7 +598,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		la[i].close();
 	    }
 	}
-	
+
 	if(document.getElementById("chapters").state == 'Open'){
 	    document.getElementById("chapters").close();
 	    console.log('closing chaplabel');
@@ -533,7 +607,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    document.getElementById("chapters").open();
 	    console.log('opening chaplabel');
 	}
-	
+
 	if (!e)
 	    var e = window.event;
 	e.cancelBubble = true;
@@ -541,8 +615,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    e.stopPropagation();
 	return false;
     }
-    
-    
+
+
     var chaps = document.getElementById("chapterContainer").getElementsByClassName("navChapter");
     for(var i = 0; i < chaps.length; i++){
 	chaps[i].state = "Closed";
@@ -580,8 +654,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    if (e.stopPropagation) e.stopPropagation();
 	    return false;
 	}
-	
-	
+
+
 	var sections = this.getElementsByClassName("navSection");
 	for(var j = 0; j < sections.length; j++){
 	    //console.log(sections);
@@ -606,32 +680,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-    
-    
+
+
     /*build mediaLabel menu */
     var chapLabel = document.getElementById("Media");
     chapLabel.state = 'Closed';
-    
-    
+
+
     chapLabel.close = function(){
 	//document.getElementById("chapterContainer").style.display = "none";
 	var chaps = document.getElementById("mediaContainer").getElementsByClassName("navMedia");
 	for(var i = 0; i < chaps.length; i++){
 	    chaps[i].close();
 	    chaps[i].style.display = 'none';
-	    
+
 	}
-	
+
 	this.state='Closed';
     }
 
-    
+
     chapLabel.open = function(){
-	
+
 	var chaps = document.getElementById("mediaContainer").getElementsByClassName("navMedia");
 	for(var i = 0; i < chaps.length; i++){
 	    chaps[i].style.display = 'block';
-	    
+
 	}
 	if(!MOBILE){
 	    var wf =  window.onclick;
@@ -642,13 +716,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var chapLabel = document.getElementById("Media");
 		if (event.target != chapLabel) {
                     chapLabel.close();
-		    
+
 		}
-	   
+
 		console.log("here");
 		window.onclick = null;
             }
-	    
+
 	}
 	this.state = 'Open';
     }
@@ -662,7 +736,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		la[i].close();
 	    }
 	}
-	
+
 	if(document.getElementById("Media").state == 'Open'){
 	    document.getElementById("Media").close();
 	    console.log('closing chaplabel');
@@ -671,7 +745,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    document.getElementById("Media").open();
 	    console.log('opening chaplabel');
 	}
-	
+
 	if (!e)
 	    var e = window.event;
 	e.cancelBubble = true;
@@ -679,8 +753,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    e.stopPropagation();
 	return false;
     }
-    
-    
+
+
     var chaps = document.getElementById("mediaContainer").getElementsByClassName("navMedia");
     for(var i = 0; i < chaps.length; i++){
 	chaps[i].state = "Closed";
@@ -718,8 +792,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    if (e.stopPropagation) e.stopPropagation();
 	    return false;
 	}
-	
-	
+
+
 	var sections = this.getElementsByClassName("navMSection");
 	for(var j = 0; j < sections.length; j++){
 	    //console.log(sections);
@@ -734,6 +808,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    }
 	}
     }
-    
-});
 
+});
