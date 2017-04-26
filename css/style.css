@@ -411,6 +411,11 @@ hr{
     #landscapeTimeline{
 	display:initial;
     }
+    #content{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+    }
 }
 
 
