@@ -103,8 +103,10 @@ div{
     margin:0em .5em 0em .5em;
     background-color:#a6997e;
     padding:.5em;
-    border:1px solid black;
-   
+    //border:1px solid black;
+    text-align:center;
+    padding: 1.5em;
+
     display:block;
     max-width:30%;
 }
@@ -115,8 +117,10 @@ div{
     color:black;
     padding:.5em;
     display:block;
-    border:1px solid black;
-   
+    //border:1px solid black;
+    text-align:center;
+    padding: 1.5em;
+
     display:block;
     max-width:30%;
 }
@@ -217,7 +221,7 @@ hr{
 /*mobile styling*/
 @media (max-width:799px) {
 
-    
+
     nav{
 	width:80%;
 	position:absolute;
@@ -229,7 +233,7 @@ hr{
 	display:none;
 
     }
-    
+
     nav div h6{
 
 	margin:auto;
@@ -240,8 +244,8 @@ hr{
     .smWidth{
 	width:40%;
     }
-    
-    
+
+
 
     .navLabel{
 	font-size:2em;
@@ -300,7 +304,7 @@ hr{
     #portraitTimeline{
 	display:initial;
     }
-    
+
     #landscapeTimeline{
 	display:none;
     }
@@ -322,11 +326,11 @@ hr{
 	margin:1em;
 
     }
-    
+
     .quizAns{
 	margin:10px 20% 10px 20%;
     }
-    
+
     .navLabel{
 
 	position:relative;
@@ -407,7 +411,7 @@ hr{
     #portraitTimeline{
 	display:none;
     }
-    
+
     #landscapeTimeline{
 	display:initial;
     }
@@ -430,7 +434,7 @@ hr{
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; 
+    overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     text-align:center;
@@ -447,7 +451,7 @@ hr{
     display:inline-block;
     text-align:initial;
     border-radius:5px;
-    
+
 
 }
 
