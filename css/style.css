@@ -105,6 +105,7 @@ div{
     padding:.5em;
     //border:1px solid black;
     text-align:center;
+    padding: 1.5em;
 
     display:block;
     max-width:30%;
@@ -118,6 +119,7 @@ div{
     display:block;
     //border:1px solid black;
     text-align:center;
+    padding: 1.5em;
 
     display:block;
     max-width:30%;
