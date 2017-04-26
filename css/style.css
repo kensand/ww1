@@ -16,6 +16,7 @@ textarea{
     width:50%;
     height:10em;
 }
+
 a{
     color:black;
 }
@@ -44,10 +45,7 @@ a:visited{
 }
 
 
-#nav{
-    float:left;
 
-}
 .largeMap{
     margin: 0 12.5% 0 12.5%;
     width:75%;
@@ -84,35 +82,21 @@ div{
     cursor:pointer;
 }
 
+
+
+#nav{
+    float:left;
+
+}
 #logodiv{
     //border:1px solid black;
 }
 
-h6{
-    cursor:pointer;
-
-}
-nav div a:hover{
-
-}
-nav div a:visited{
-
-}
-p{
-
-    text-align:left;
-    margin:1em;
-}
-hr{
-    border-color:black;
-    background-color:black;
-    color:black;
-}
 #arrows{
 
     bottom:4em;
     width:100%;
-    displayL:inline-block;
+    display:inline-block;
 }
 #next{
     float:right;
@@ -120,7 +104,7 @@ hr{
     background-color:#a6997e;
     padding:.5em;
     border:1px solid black;
-    border-radius:1em;
+   
     display:block;
     max-width:30%;
 }
@@ -132,7 +116,7 @@ hr{
     padding:.5em;
     display:block;
     border:1px solid black;
-    border-radius:1em;
+   
     display:block;
     max-width:30%;
 }
@@ -140,19 +124,6 @@ hr{
     border:0px;
 }
 
-.contentImg{
-    display:inline-block;
-    margin:1em;
-}
-.lgWidth{
-    width:80%;
-}
-.mdWidth{
-    width:30%;
-}
-.smWidth{
-    width:20%;
-}
 #content{
     width:100%;
     text-align:center;
@@ -175,6 +146,42 @@ hr{
 #footer p{
     text-align:center;
 }
+
+h6{
+    cursor:pointer;
+
+}
+nav div a:hover{
+
+}
+nav div a:visited{
+
+}
+p{
+
+    text-align:left;
+    margin:1em;
+}
+hr{
+    border-color:black;
+    background-color:black;
+    color:black;
+}
+
+.contentImg{
+    display:inline-block;
+    margin:1em;
+}
+.lgWidth{
+    width:80%;
+}
+.mdWidth{
+    width:30%;
+}
+.smWidth{
+    width:20%;
+}
+
 
 .quizButton{
     display:block;
@@ -210,28 +217,31 @@ hr{
 /*mobile styling*/
 @media (max-width:799px) {
 
+    
+    nav{
+	width:80%;
+	position:absolute;
+	border-radius:4px;
+	min-width:200px;
+    }
+
+    nav div{
+	display:none;
+
+    }
+    
+    nav div h6{
+
+	margin:auto;
+	line-height:2em;
+
+    }
+
     .smWidth{
 	width:40%;
     }
-    #logo{
-
-	float:left;
-	width:100%;
-	background-color:#a6997e;
-    }
-    #logodiv{
-	display:block;
-	width:20%;
-	float:left;
-	cursor:pointer;
-	min-width:5em;
-	min-height:3.5em;
-    }
-
-    #title{
-	margin:0px;
-	text-align:center;
-	  }
+    
+    
 
     .navLabel{
 	font-size:2em;
@@ -250,26 +260,28 @@ hr{
 	border-radius:4px;
     }
 
-    nav{
-	width:80%;
-	position:absolute;
-	border-radius:4px;
-	min-width:200px;
+    #logo{
+
+	float:left;
+	width:100%;
+	background-color:#a6997e;
     }
 
-    nav div{
-	display:none;
-
+    #logodiv{
+	display:block;
+	width:20%;
+	float:left;
+	cursor:pointer;
+	min-width:5em;
+	min-height:3.5em;
     }
     #chapterContainer, #mediaContainer{
 	display:block;
     }
-    nav div h6{
-
-	margin:auto;
-	line-height:2em;
-
-    }
+    #title{
+	margin:0px;
+	text-align:center;
+	  }
     #menuButton{
 	width:15%;
 	display:block;
@@ -284,36 +296,37 @@ hr{
 	cursor:pointer;
 	min-width:3em;
     }
+
+    #portraitTimeline{
+	display:initial;
+    }
+    
+    #landscapeTimeline{
+	display:none;
+    }
 }
 
 /*desktop styling*/
 @media (min-width: 800px) {
+
+    nav{
+	display:inline-block;
+    }
+    nav div{
+
+
+
+    }
+    nav div h6{
+	font-size:1em;
+	margin:1em;
+
+    }
+    
     .quizAns{
 	margin:10px 20% 10px 20%;
     }
-    #logo{
-
-    float:left;
-    width:100%;
-    background-color:#a6997e;
-    max-height:10vh;
-
-    }
-    #logodiv{
-	display:inline-block;
-	width:15%;
-	max-width:10vh;
-	float:left;
-	cursor:pointer;
-    }
-
-    #nav{
-	width:inherit;
-
-
-    display:inline-block;
-
-}
+    
     .navLabel{
 
 	position:relative;
@@ -333,18 +346,16 @@ hr{
     .navLabel h 6{
 	//margin:1em 0em 1em 0em;
     }
-    nav{
-	display:inline-block;
-    }
-    nav div{
 
-
+    .navChapter, .navMedia{
+	width:8em;
+	text-align:left;
 
     }
-    nav div h6{
-	font-size:1em;
-	margin:1em;
 
+    .navSection, .navMSection{
+	margin-left:1em;
+	text-align:left;
     }
 
 
@@ -368,15 +379,37 @@ hr{
     #menuButton{
 	display:none;
     }
-    .navChapter, .navMedia{
-	width:8em;
-	text-align:left;
+
+    #logo{
+
+    float:left;
+    width:100%;
+    background-color:#a6997e;
+    max-height:10vh;
+
+    }
+    #logodiv{
+	display:inline-block;
+	width:15%;
+	max-width:10vh;
+	float:left;
+	cursor:pointer;
+    }
+
+    #nav{
+	width:inherit;
+
+
+    display:inline-block;
 
     }
 
-    .navSection, .navMSection{
-	margin-left:1em;
-	text-align:left;
+    #portraitTimeline{
+	display:none;
+    }
+    
+    #landscapeTimeline{
+	display:initial;
     }
 }
 
@@ -390,18 +423,18 @@ hr{
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     text-align:center;
 }
 
-/* Modal Content/Box */
+
 #modalContent {
     background-color: #a6997e;
-    margin: auto;//15% auto; /* 15% from the top and centered */
+    margin: auto;
     margin-top:20px;
     padding: 3%;//20px;
     padding-top:1%;
@@ -409,11 +442,11 @@ hr{
     display:inline-block;
     text-align:initial;
     border-radius:5px;
-    //width: 80%; /* Could be more or less, depending on screen size */
+    
 
 }
 
-/* The Close Button */
+
 #close {
     color: #000000;
     float: right;
