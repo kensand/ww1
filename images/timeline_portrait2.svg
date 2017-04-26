@@ -14,7 +14,7 @@
    version="1.1"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="timeline_portrait.svg">
+   sodipodi:docname="timeline_portrait2.svg">
   <metadata
      id="metadata116">
     <rdf:RDF>
@@ -23,6 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>timeline_portrait</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,9 +40,9 @@
      inkscape:window-height="1026"
      id="namedview114"
      showgrid="false"
-     inkscape:zoom="0.3375"
-     inkscape:cx="2600"
-     inkscape:cy="8766.5574"
+     inkscape:zoom="0.12836708"
+     inkscape:cx="3962.1214"
+     inkscape:cy="2250.0108"
      inkscape:window-x="1440"
      inkscape:window-y="385"
      inkscape:window-maximized="1"
@@ -91,19 +92,21 @@
   </defs>
   <g
      id="timeline_portrait"
-     transform="matrix(0.99999955,0,0,1.0011231,0.00229698,-0.55690481)"
-     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
     <g
        id="g18">
       <g
          id="Spine"
-         transform="matrix(0,1,-1,0,5200,0)"
-         style="fill:#000000">
+         transform="translate(2600.000000, 5200.000000) rotate(90.000000) translate(-2600.000000, -5200.000000) translate(-2600.000000, 2600.000000)"
+         fill="#000000">
         <rect
            id="timeline_root"
-           x="1000"
+           x="0"
            y="2450"
-           width="8400"
+           width="10400"
            height="300" />
         <rect
            id="timeline_branch_0"
@@ -150,30 +153,25 @@
       </g>
       <g
          id="chapter_buttons"
-         transform="translate(162,1536)">
+         transform="translate(162.000000, 1536.000000)"
+         style="cursor:pointer;">
         <g
            id="chapter_1_button"
-           transform="translate(3788,0)"
+           transform="translate(3788.000000, 0.000000)"
            onclick="window.parent.location='../chapter1/summary.html'">
           <mask
              id="mask-2"
              fill="white">
             <use
                xlink:href="#path-1"
-               id="use32"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
+               id="use32" />
           </mask>
           <use
              id="Mask"
-             xlink:href="#path-1"
-             style="fill:#ef0000;stroke:#000000;stroke-width:100"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
+             stroke="#000000"
+             stroke-width="100"
+             fill="#EF0000"
+             xlink:href="#path-1" />
           <image
              id="Chapter_1_button"
              mask="url(#mask-2)"
@@ -185,27 +183,20 @@
         </g>
         <g
            id="chapter_2_button"
-           transform="translate(0,940)"
+           transform="translate(0.000000, 940.000000)"
            onclick="window.parent.location='../chapter2/summary.html'">
           <mask
              id="mask-4"
              fill="white">
             <use
                xlink:href="#path-3"
-               id="use38"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
+               id="use38" />
           </mask>
           <use
              id="use40"
-             xlink:href="#path-3"
-             style="stroke:#000000;stroke-width:100"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
+             stroke="#000000"
+             stroke-width="100"
+             xlink:href="#path-3" />
           <image
              id="Chapter_2_button"
              mask="url(#mask-4)"
@@ -217,27 +208,20 @@
         </g>
         <g
            id="chapter_3_button"
-           transform="translate(3788,2080)"
+           transform="translate(3788.000000, 2080.000000)"
            onclick="window.parent.location='../chapter3/summary.html'">
           <mask
              id="mask-6"
              fill="white">
             <use
                xlink:href="#path-5"
-               id="use45"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
+               id="use45" />
           </mask>
           <use
              id="use47"
-             xlink:href="#path-5"
-             style="stroke:#000000;stroke-width:100"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
+             stroke="#000000"
+             stroke-width="100"
+             xlink:href="#path-5" />
           <image
              id="Chapter_3_button"
              mask="url(#mask-6)"
@@ -249,27 +233,20 @@
         </g>
         <g
            id="chapter_4_button"
-           transform="translate(0,3020)"
+           transform="translate(0.000000, 3020.000000)"
            onclick="window.parent.location='../chapter4/summary.html'">
           <mask
              id="mask-8"
              fill="white">
             <use
                xlink:href="#path-7"
-               id="use52"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
+               id="use52" />
           </mask>
           <use
              id="use54"
-             xlink:href="#path-7"
-             style="stroke:#000000;stroke-width:100"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
+             stroke="#000000"
+             stroke-width="100"
+             xlink:href="#path-7" />
           <image
              id="chap4"
              mask="url(#mask-8)"
@@ -281,27 +258,20 @@
         </g>
         <g
            id="chapter_5_button"
-           transform="translate(3788,4160)"
+           transform="translate(3788.000000, 4160.000000)"
            onclick="window.parent.location='../chapter5/summary.html'">
           <mask
              id="mask-10"
              fill="white">
             <use
                xlink:href="#path-9"
-               id="use59"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
+               id="use59" />
           </mask>
           <use
              id="use61"
-             xlink:href="#path-9"
-             style="stroke:#000000;stroke-width:100"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
+             stroke="#000000"
+             stroke-width="100"
+             xlink:href="#path-9" />
           <image
              id="chap5"
              mask="url(#mask-10)"
@@ -313,27 +283,20 @@
         </g>
         <g
            id="chapter_6_button"
-           transform="translate(0,5100)"
+           transform="translate(0.000000, 5100.000000)"
            onclick="window.parent.location='../chapter6/summary.html'">
           <mask
              id="mask-12"
              fill="white">
             <use
                xlink:href="#path-11"
-               id="use66"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
+               id="use66" />
           </mask>
           <use
              id="use68"
-             xlink:href="#path-11"
-             style="stroke:#000000;stroke-width:100"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
+             stroke="#000000"
+             stroke-width="100"
+             xlink:href="#path-11" />
           <image
              id="chap6"
              mask="url(#mask-12)"
@@ -345,27 +308,20 @@
         </g>
         <g
            id="chapter_7_button"
-           transform="translate(3788,6240)"
+           transform="translate(3788.000000, 6240.000000)"
            onclick="window.parent.location='../chapter7/summary.html'">
           <mask
              id="mask-14"
              fill="white">
             <use
                xlink:href="#path-13"
-               id="use73"
-               x="0"
-               y="0"
-               width="100%"
-               height="100%" />
+               id="use73" />
           </mask>
           <use
              id="use75"
-             xlink:href="#path-13"
-             style="stroke:#000000;stroke-width:100"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
+             stroke="#000000"
+             stroke-width="100"
+             xlink:href="#path-13" />
           <image
              id="chap7"
              mask="url(#mask-14)"
@@ -378,10 +334,11 @@
       </g>
       <g
          id="chapter_text"
-         transform="translate(706,436)"
+         transform="translate(706.000000, 436.000000)"
          font-size="320"
-         font-weight="bold"
-         style="font-weight:bold;font-size:320px;font-family:AmericanTypewriter-Bold, 'American Typewriter';fill:#000000">
+         font-family="AmericanTypewriter-Bold, American Typewriter"
+         fill="#000000"
+         font-weight="bold">
         <text
            id="Chapter_1">
           <tspan
@@ -396,7 +353,7 @@
         <text
            id="Chapter_2">
           <tspan
-             x="0.92000002"
+             x="0.92"
              y="1087"
              id="tspan85">Chapter</tspan>
           <tspan
@@ -418,7 +375,7 @@
         <text
            id="Chapter_4">
           <tspan
-             x="0.92000002"
+             x="0.92"
              y="3639"
              id="tspan95">Chapter</tspan>
           <tspan
@@ -440,7 +397,7 @@
         <text
            id="Chapter_6">
           <tspan
-             x="0.92000002"
+             x="0.92"
              y="5719"
              id="tspan105">Chapter</tspan>
           <tspan
@@ -462,16 +419,4 @@
       </g>
     </g>
   </g>
-  <path
-     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 1850,0 3350,0 2600,1000 Z"
-     id="path3450"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc" />
-  <path
-     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 1851,9399.1667 1500,0 -750,1000.0003 z"
-     id="path3450-3"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc" />
 </svg>
