@@ -673,19 +673,45 @@ document.addEventListener("DOMContentLoaded", function(event) {
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Asia"));
     msection.appendChild(h);
-    mchap.appendChild(msection);
+	mchap.appendChild(msection);
 
-	//beforenafter
-    msection = document.createElement("div");
-    msection.className = "navMSection"
-    msection.setAttribute("href", "../media/beforenafter.html");
+
+	mcont.appendChild(mchap);
+
+	mchap = document.createElement("div");
+    mchap.className = "navMedia";
     h = document.createElement("h6");
     h.appendChild(document.createTextNode("Before & After"));
+    mchap.appendChild(h);
+
+    //africamap
+    msection = document.createElement("div");
+    msection.className = "navMSection"
+    msection.setAttribute("href", "../media/europeBnA.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Europe"));
+    msection.appendChild(h);
+    mchap.appendChild(msection);
+
+    //europemap
+    msection = document.createElement("div");
+    msection.className = "navMSection"
+    msection.setAttribute("href", "../media/ypresBnA.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("City of Ypres"));
+    msection.appendChild(h);
+    mchap.appendChild(msection);
+
+    //asiamap
+    msection = document.createElement("div");
+    msection.className = "navMSection"
+    msection.setAttribute("href", "../media/verdunBnA.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Verdun Fort"));
     msection.appendChild(h);
     mchap.appendChild(msection);
 
 	mcont.appendChild(mchap);
-
 	
 mchap = document.createElement("div");
 	mchap.className = "navMedia";
