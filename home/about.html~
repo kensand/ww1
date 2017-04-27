@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+  
+  <nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      World War 1: Unraveled - Home
+    </h1>
+  </div>
+
+  
+
+	
+
+
+<div id="content" style="display:block;"><h1 id="jswarning">IF YOU CAN SEE THIS TEXT, YOU NEED TO ENABLE JAVASCRIPT FOR MANY FUNCTIONS OF THIS SITE</h1>
+    <object data="../images/timeline_portrait.svg" type="image/svg+xml" class="largeMap" id="portraitTimeline">
+      <p>If you can see this message, your browser doesn't support SVG's.</p>
+    </object>
+    <object data="../images/timeline_landscape.svg" type="image/svg+xml" class="largeMap" id="landscapeTimeline">
+      <p>If you can see this message, your browser doesn't support SVG's.</p>
+    </object>
+  </div>
+
+  <footer id="footer">
+    
+  </footer>
+</body>
+
+</html>
+

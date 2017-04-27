@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+  
+  <nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      About
+    </h1>
+  </div>
+
+  
+
+	
+
+
+<div id="content" style="display:block;"><h1 id="jswarning">IF YOU CAN SEE THIS TEXT, YOU NEED TO ENABLE JAVASCRIPT FOR MANY FUNCTIONS OF THIS SITE</h1>
+  <p>This website was created as a project aimed at creating an educational and interactive website on World War 1 for GUI 2 at UMass Lowell, for educational purposes only. You may use the content of this site freely, and any unauthorized use of content is purely unintentional. If you have any concerns/comments/questions, please feel free to email any of the folowing creators using the format:<br/><br/> firstname_lastname@student.uml.edu <br/> </p>
+  <p>
+    Kenneth Sanders - Computer Science and Math
+  </p>
+  <p>
+    Jacob Stephens - Computer Science
+  </p>
+  <p>
+    Aliyu Zakari - Computer Science
+  </p>
+</div>
+
+  <footer id="footer">
+    
+  </footer>
+</body>
+
+</html>
+
