@@ -1,0 +1,57 @@
+
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8"> <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+  <body>
+    <nav id="nav">
+    </nav>
+    <div id="titlediv">
+      <h1 id="title">
+
+	Before and After
+      </h1>
+    </div>
+
+
+
+
+
+
+    <div id="content" style="">
+     
+      <div id="overlap" style="position:relative;margin:0px;height:596px;width:630px;">
+	<img id="under" class="largeMap" src="../images/beforenafter/before.jpg" style="position:absolute; opacity:1;">
+	<img id="over" class="largeMap" src="../images/beforenafter/after.jpg" style="position:absolute; opacity:0;">
+      </div>
+
+      <input id="slider" type="range" value="0" min="0" max="100" onchange="opac();">
+
+      <script>
+	var opac = function(){
+	document.getElementById("under").style.opacity = (document.getElementById("slider").value / 100).toString();
+	document.getElementById("over").style.opacity = (1 - (document.getElementById("slider").value / 100)).toString();
+	}
+      </script>
+      
+    </div>
+
+    <footer id="footer">
+
+    </footer>
+  </body>
+
+</html>

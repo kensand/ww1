@@ -38,7 +38,7 @@ MODAL
 */
 
 document.addEventListener("DOMContentLoaded", function(event) {
-
+	document.getElementById("jswarning").style.display="none";
         var content = document.getElementById("content");
         console.log(content);
         var modal = document.createElement("div");

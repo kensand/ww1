@@ -675,8 +675,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
     msection.appendChild(h);
     mchap.appendChild(msection);
 
+	//beforenafter
+    msection = document.createElement("div");
+    msection.className = "navMSection"
+    msection.setAttribute("href", "../media/beforenafter.html");
+    h = document.createElement("h6");
+    h.appendChild(document.createTextNode("Before & After"));
+    msection.appendChild(h);
+    mchap.appendChild(msection);
 
-    mcont.appendChild(mchap);
+	mcont.appendChild(mchap);
+
+	
+mchap = document.createElement("div");
+	mchap.className = "navMedia";
+	mchap.id = "vids";
+    h = document.createElement("h6");
+	h.appendChild(document.createTextNode("Videos"));
+	mchap.setAttribute("href", "../media/videos.html");
+	mchap.appendChild(h);
+
+	mcont.appendChild(mchap);
+	
     label.appendChild(mcont);
 
 
@@ -1050,5 +1070,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    }
 	}
     }
+	var vids = document.getElementById("vids");
+	vids.close = function(){return false;}
+	vids.onclick = vids.open = function(){window.location="../media/videos.html";};
 
 });
