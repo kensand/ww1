@@ -83,10 +83,10 @@ div{
 }
 
 
-
 #nav{
     float:left;
 
+    z-index:999;
 }
 #logodiv{
     //border:1px solid black;
@@ -219,10 +219,43 @@ hr{
     user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+#overlap{
+    
+    margin:50px auto 50px auto;
+}
+
+#sliderCont{
+    margin:auto;
+    text-align:center;
+}
+#slider{
+    
+    margin:auto;
+}
+
 /*mobile styling*/
 @media (max-width:799px) {
 
+    #over, #under{
+        
+        width:75vw;
+    }
 
+    #slider{
+        min-width:100px;
+    }
+    #sliderCont{
+        min-width:250px;
+
+    }
+    #overlap{
+        position:relative;
+        min-width:255px;
+        min-height:300px;
+        margin:50px auto 5em auto;
+        z-index:0;
+    }
+    
     nav{
 	width:80%;
 	position:absolute;
@@ -366,7 +399,7 @@ hr{
 
     #titlediv{
 	display:table;
-	width:85%;
+	width:100%;
 	text-align:center;
     }
 
@@ -386,17 +419,25 @@ hr{
     }
 
     #logo{
-
+        width:78px;
+    min-height:65px;
+    height:65px;
+    max-height:65px;
     float:left;
     width:100%;
     background-color:#a6997e;
-    max-height:10vh;
+//    max-height:10vh;
 
     }
     #logodiv{
+        
+        width:78px;
 	display:inline-block;
-	width:15%;
-	max-width:10vh;
+	//width:15%;
+    min-height:65px;
+    height:65px;
+    max-height:65px;
+//	max-width:10vh;
 	float:left;
 	cursor:pointer;
     }
@@ -420,6 +461,23 @@ hr{
 	width:80%;
 	margin-left:10%;
 	margin-right:10%;
+    }
+
+    
+    #overlap{
+        position:relative;
+        margin:auto;
+        height:65vh;
+        z-index:0;
+    }
+    #sliderCont{
+    margin:auto;
+    width:40%;
+    text-align:center;
+    min-width:400px;
+    }
+    #slider{
+        min-width:300px;
     }
 }
 
