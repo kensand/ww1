@@ -126,6 +126,7 @@ div{
 }
 #chapterContainer, #mediaContainer{
     border:0px;
+    z-index:999;
 }
 
 #content{
