@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8"> <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+
+  <body><nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      Chapter 6, Section 3: 11/11/18
+    </h1>
+  </div>
+
+
+
+
+
+
+  <div id="content"><h1 id="jswarning">IF YOU CAN SEE THIS TEXT, YOU NEED TO ENABLE JAVASCRIPT FOR MANY FUNCTIONS OF THIS SITE</h1>
+
+    <p>
+      <img class="right contentImg smWidth" src="../images/chapter-images/chapter6/ch6-sec3-img1.png"/>
+      The war was coming to a close, Germany’s spring offensive failed to get them victory and the allies were knocking on Germany’s door. Germany’s government was in collapse and due to a revolution a new government was put in place, which in response allowed for a quick signing of an armistice. The war was finally over after a total after 4 years, 3 months and 2 weeks. 35 million casualties alongside so much destruction in Europe. Peace would take a few months to finalize, but the Allies were victorious.
+</p>
+      <img class="left contentImg smWidth" src="../images/chapter-images/chapter6/ch6-sec3-img2.png"/>
+    <p>  The other central powers already signed armistices just before the German Armistice. The Austro-Hungarians after a defeat to the Italians at the Battle of Vittorio Veneto started to retreat and realized that they were not capable of fighting any longer signed an armistice on November 3rd. The Ottomans signed even earlier on October due to internal problems and losing battles in the Middle East. Overall these countries would lose their colonies and territories. The Germans would be forced to pay large reparations for a total of 31 Billion dollars, and we given most of the blame for the war while its allies who also were major parts of the war did not. This would become a major issue for Germany in the following years.
+  </p>
+  </div>
+
+<div id="arrows">
+  <a id="prev" href="../chapter6/section2.html">
+    Prev: Chapter 6 Section 2
+  </a>
+  <a id="next" href="../chapter6/section4.html">
+    Next: Chapter 6 Section 4
+  </a>
+</div>
+
+  <footer id="footer">
+
+  </footer>
+</body>
+
+</html>

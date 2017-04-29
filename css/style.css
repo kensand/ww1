@@ -44,11 +44,15 @@ a:visited{
     float:right;
 }
 
-
+.map{
+   
+}
 
 .largeMap{
+    
     margin: 0 12.5% 0 12.5%;
     width:75%;
+    border:1px solid black;
 }
 
 nav{
@@ -105,7 +109,7 @@ div{
     padding:.5em;
     border:1px solid black;
     text-align:center;
-    padding: 1.5em;
+
 
     display:block;
     max-width:30%;
@@ -119,7 +123,7 @@ div{
     display:block;
     border:1px solid black;
     text-align:center;
-    padding: 1.5em;
+
 
     display:block;
     max-width:30%;
@@ -236,10 +240,23 @@ hr{
 /*mobile styling*/
 @media (max-width:799px) {
 
+
     #over, #under{
-        
-        width:75vw;
+	height:auto;
+
+	
+	width:40vw;
+	left:20vw;
     }
+    #overlap{
+	text-align:center;
+        position:relative;
+        margin:auto;
+	margin-top:50px;
+        height:40vw;
+        z-index:0;
+    }
+    
 
     #slider{
         min-width:100px;
@@ -248,13 +265,7 @@ hr{
         min-width:250px;
 
     }
-    #overlap{
-        position:relative;
-        min-width:255px;
-        min-height:300px;
-        margin:50px auto 5em auto;
-        z-index:0;
-    }
+    
     
     nav{
 	width:80%;
@@ -463,11 +474,19 @@ hr{
 	margin-right:10%;
     }
 
-    
+    #over, #under{
+	height:auto;
+	margin:auto;
+	
+	width:40vw;
+	left:20vw;
+    }
     #overlap{
+	text-align:center;
         position:relative;
         margin:auto;
-        height:65vh;
+	margin-top:50px;
+        height:40vw;
         z-index:0;
     }
     #sliderCont{
@@ -478,6 +497,9 @@ hr{
     }
     #slider{
         min-width:300px;
+    }
+    #prev, #next{
+	padding:1em;
     }
 }
 

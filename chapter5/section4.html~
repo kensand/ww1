@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1: Unraveled</title>
+
+    <meta charset="utf-8"> <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+
+  <body><nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      Chapter 5, Section 4: Passchendaele and other Western Fronts
+    </h1>
+  </div>
+
+
+
+
+
+<br/>
+  <div id="content"><h1 id="jswarning">IF YOU CAN SEE THIS TEXT, YOU NEED TO ENABLE JAVASCRIPT FOR MANY FUNCTIONS OF THIS SITE</h1>
+    <img class="left contentImg smWidth" src="../images/chapter-images/chapter5/ch5-sec4-img1.png"/>
+
+  <p>
+    In Late 1916, the Germans were forced to turn the war into a defensive one. After the losses of Verdun and the Somme, the Germans would form a defensive line called the Hindenburg line. On February 9th, the German army would retreat using a scorched earth policy, by destroying most of what they saw which would make an Allied offensive difficult.  One of the early offensive in 1917 was the battle of Arras, where the British would make a massive push forward. At the Battle of Arras, the Canadian military would have their largest victory at Vimy Ridge. The battle of Arras also was the first major battle that the Germans had air superiority.  In June the Flying Circus was founded and led by the Famous Red Baron. This German fighter unit would have great success in 1917. Later in June, the first Americans would arrive to help the allies, and would enter the trenches later in 1917, but served as a massive morale booster for the weary Entente.
+</p>
+    <img class="right contentImg smWidth" src="../images/chapter-images/chapter5/ch5-sec4-img2.png"/>
+<p>
+    The British would also launch an offensive to take back Ypres, Belgium. The third battle of Ypres or often known as the battle of Passchendaele, would a blood bath where over half a million casualties in total. The battle would have the introduction of mustard gas, and would also have an increase in Allied use of chemical weapons. The battle would last until November with no clear victor. The last major battle in 1917, was the battle of Cambrai, where over 300 tanks were used in a British offensive. These tanks were able to push the British forward, but would result in a counter attack where German storm troopers were deployed. 1917 may have had many stalemates, but Germany was falling and so were the other Central Powers. Austria-Hungary would be carried by the Germans in Italy just so they could keep fighting and prevent the Germans from being the only one fighting in the west.
+  </p>
+
+  </div>
+<div id="arrows">
+  <a id="prev" href="../chapter5/section3.html">
+    Prev: Chapter 5 Section 3
+  </a>
+  <a id="next" href="../chapter5/quiz.html">
+    Next: Chapter 5 Quiz
+  </a>
+</div>
+  <footer id="footer">
+
+  </footer>
+</body>
+
+</html>

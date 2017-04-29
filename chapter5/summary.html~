@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8"> <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+
+  <body><nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      Chapter 5: 1917 Russia Leaves, America Enters
+    </h1>
+  </div>
+
+
+
+
+
+
+<div id="content"><h1 id="jswarning">IF YOU CAN SEE THIS TEXT, YOU NEED TO ENABLE JAVASCRIPT FOR MANY FUNCTIONS OF THIS SITE</h1>
+
+  <img class="contentImg smWidth" src="../images/chapter-images/chapter5/ch5-sec0-img1.png">
+  <p>
+    1917 was a mixed bag of a year for both sides. The central powers would be forced into more defensive positions, on the western front while the Russians would surrender by the end of 1917 due to internal political instability. The Allies would lose Russia, but would gain the assistance of the United States.  By the end of 1917, the war was coming to a close to many, The Germans would have one last offensive in 1918, as war of attrition would not be in their favor. 
+  </p>
+</div>
+
+<div id="arrows">
+  <a id="prev" href="../chapter4/quiz.html">
+    Prev: Chapter 4 Quiz
+  </a>
+  <a id="next" href="../chapter5/section1.html">
+    Next: Chapter 5 Section 1
+  </a>
+</div>
+
+<footer id="footer">
+
+  </footer>
+</body>
+
+</html>

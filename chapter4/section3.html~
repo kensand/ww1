@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8"> <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+
+  <body><nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      Chapter 4, Section 3: The Battle of Jutland
+    </h1>
+  </div>
+
+
+
+
+
+
+  <div id="content"><h1 id="jswarning">IF YOU CAN SEE THIS TEXT, YOU NEED TO ENABLE JAVASCRIPT FOR MANY FUNCTIONS OF THIS SITE</h1>
+
+    <p>
+      <img class="right contentImg smWidth" src="../images/chapter-images/chapter4/ch4-sec3-img1.png"/>
+      Though naval ships had massive advancements in the era before and during WWI, there were not many conflicts besides small skirmishes. Various skirmishes in the Indian Ocean and the Pacific would be were most naval conflicts would occur between Britain and Germany. The battle of Jutland would be the largest naval battle in WWI. On May 31s the battle would begin in the North Sea off the coast of Denmark. Over 250 ships were involved in this battle. The British outnumbered the German fleet and knew their codes, but the battle would be indecisive. The British lost more men and more ships, but the Germans would be forced to retreat.
+</p>
+      <img class="left contentImg smWidth" src="../images/chapter-images/chapter4/ch4-sec3-img2.png"/>
+    <p>Victory was claimed by both parties for different reasons. The battle would only last 2 days, being rather short compared to the other battles of WW1. After this minor skirmishes would occur naval. Later in 1916, the Battle of Dover Strait would occurred where German torpedo boats were able to damage and destroy a few British destroyers. The Germans would resume the use of U-boat later in 1916, which would become a problem later on.
+  </p>
+  </div>
+
+<div id="arrows">
+  <a id="prev" href="../chapter4/section2.html">
+    Prev: Chapter 4 Section 2
+  </a>
+  <a id="next" href="../chapter4/section4.html">
+    Next: Chapter 4 Section 4
+  </a>
+</div>
+
+  <footer id="footer">
+
+  </footer>
+</body>
+
+</html>

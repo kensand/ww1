@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8"> <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+
+  <body><nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      Chapter 6, Section 2: The War ends in Italy and Turkey
+    </h1>
+  </div>
+
+
+  <div id="content"><h1 id="jswarning">IF YOU CAN SEE THIS TEXT, YOU NEED TO ENABLE JAVASCRIPT FOR MANY FUNCTIONS OF THIS SITE</h1>
+
+    <p>
+      <img class="right contentImg mdWidth" src="../images/chapter-images/chapter6/ch6-sec2-img1.png">
+      With Russia out of the war, the remaining Austria-Hungarians continued to fight in the Italians. The German troops aiding them were relocated to the western front, making Austria-Hungary only having its own army to win the war in Italy. The second battle of the Piave River resulted in an Austro-Hungarian defeat, but the Italians had massive casualties. Austria-Hungary was falling apart already due to the desertion and Czechoslovakia, Croatia and Slovenia claiming independence. The final battle of the Italian Front was at the battle of Vittorio Veneto, which resulted in the Austro-Hungarians surrendering. Both sides suffered heavily from this war in the Alps.
+</p>
+      <img class="left contentImg mdWidth" src="../images/chapter-images/chapter6/ch6-sec2-img2.png">
+<p>
+      In 1918, the Ottoman Empire was not doing too well. Most Ottoman efforts were put into the Caucasus that had mixed results. In the Middle East, they were not having any success due to an Arab Revolt and various hit and run attacks in Palestine. These attacks were led by the British military officer T.E Lawrence. He assisted in the Arab revolution, and helped in capturing Damascus. He would get a film made about him in 1962 that got critical acclaim. The Ottomans had a few more defeats that resulted in their surrendering in October. The Ottoman Empire would become modern day Turkey, with its other lands being separated into new countries controlled by France and Britain.
+    </p>
+  </div>
+
+<div id="arrows">
+  <a id="prev" href="../chapter6/section1.html">
+    Prev: Chapter 6 Section 1
+  </a>
+  <a id="next" href="../chapter6/section3.html">
+    Next: Chapter 6 Section 3
+  </a>
+</div>
+
+  <footer id="footer">
+
+  </footer>
+</body>
+
+</html>

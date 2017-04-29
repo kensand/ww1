@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>World War 1:Unraveled</title>
+
+    <meta charset="utf-8"> <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+  </head>
+
+  <body>
+  <nav id="nav">
+  </nav>
+  <div id="titlediv">
+    <h1 id="title">
+      Chapter 1, Section 3: Balkan Expansion
+    </h1>
+  </div>
+
+  
+
+	
+
+
+  <div id="content"><h1 id="jswarning">IF YOU CAN SEE THIS TEXT, YOU NEED TO ENABLE JAVASCRIPT FOR MANY FUNCTIONS OF THIS SITE</h1>
+    
+    <p>
+      <img class="right contentImg smWidth" src="../images/chapter-images/chapter1/ch1-sec3-img1.png"/>
+      The Balkan Peninsula today is composed of various countries and is where the newest European countries exits, due to constant turmoil and civil wars. The Balkans were not always like this, but due to history this region would become extremely important to this war. The Ottoman Empire once extended deep into Europe after defeating the Byzantine Empire in 1453 which was once part of the Roman Empire, would over the next 200 years expand farther into Europe, but after major defeats in 1683  it would start to lose the land it conquered and by the eve of World War I, the Balkans would be composed of independent states, those these independent states were the target of the Austro-Hungarian empire. The Austro-Hungarians would start to expand its borders here as well after wars with the Ottoman Empire it would take over modern day Bosnia, but aimed to take Serbia next. The Russian Empire opposed this as it was their last ally in the Balkans, and due to the Austro-Hungarian invasion would declare war and began World War I.</p>
+    <img class="left contentImg smWidth" src="../images/chapter-images/chapter1/ch1-sec3-img2.png"/>
+    <p>
+Though the Balkans would be a major reason for World War I, this region still suffers from it and all the prior conquests, The area is composed of many ethnic groups including Slavs, Croats, Serbs and Greeks, but due to the invasion of the Ottomans new groups would settle in these lands including many people who were Islamic causing religious problems in this region too alongside the ethnic problems. It's the reason these nations fought against the Austro-Hungarians and Ottomans, they wanted their own identity and laws. It's the reason the borders in this region have changed recently that the populations have different cultures and identities and want to have their own nation to allow their cultures and ideas to flourish.
+    </p>
+    <img class="right contentImg smWidth" src="../images/chapter-images/chapter1/ch1-sec3-img3.png"/>
+  </div>
+
+<div id="arrows">
+  <a id="prev" href="../chapter1/section2.html">
+    Prev: Chapter 1 Section 2
+  </a>
+  <a id="next" href="../chapter1/section4.html">
+    Next: Chapter 1 Section 4
+  </a>
+</div>
+
+  <footer id="footer">
+    
+  </footer>
+</body>
+
+</html>
+
