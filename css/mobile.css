@@ -1,0 +1,118 @@
+
+/*mobile styling*/
+@media (max-width:799px) {
+
+
+    #over, #under{
+	height:auto;
+
+	
+	width:40vw;
+	left:20vw;
+    }
+    #overlap{
+	text-align:center;
+        position:relative;
+        margin:auto;
+	margin-top:50px;
+        height:40vw;
+        z-index:0;
+    }
+    
+
+    #slider{
+        min-width:100px;
+    }
+    #sliderCont{
+        min-width:250px;
+
+    }
+    
+    
+    nav{
+	width:80%;
+	position:absolute;
+	border-radius:4px;
+	min-width:200px;
+    }
+
+    nav div{
+	display:none;
+
+    }
+
+    nav div h6{
+
+	margin:auto;
+	line-height:2em;
+
+    }
+
+    .smWidth{
+	width:40%;
+    }
+
+
+
+    .navLabel{
+	font-size:2em;
+	border-radius:4px;
+    }
+
+    .navChapter, .navMedia{
+	padding:0em 0em 0em .5em;
+	text-indent:10%;
+	border-radius:4px;
+
+    }
+
+    .navSection, .navMSection{
+	text-indent:20%;
+	border-radius:4px;
+    }
+
+    #logo{
+
+	float:left;
+	width:100%;
+	background-color:#a6997e;
+    }
+
+    #logodiv{
+	display:block;
+	width:20%;
+	float:left;
+	cursor:pointer;
+	min-width:5em;
+	min-height:3.5em;
+    }
+    #chapterContainer, #mediaContainer{
+	display:block;
+    }
+    #title{
+	margin:0px;
+	text-align:center;
+	  }
+    #menuButton{
+	width:15%;
+	display:block;
+	float:right;
+	z-index:999;
+	padding:1em 0em 1em 0em;
+	border:2px black outset;
+	border-radius:.5em;
+	background-color:#a6997e;
+	font-size:1.5em;
+	font-family:Typewriter;
+	cursor:pointer;
+	min-width:3em;
+    }
+
+    #portraitTimeline{
+	display:initial;
+    }
+
+    #landscapeTimeline{
+	display:none;
+    }
+}

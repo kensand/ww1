@@ -1,0 +1,152 @@
+
+/*desktop styling*/
+@media (min-width: 800px) {
+
+    nav{
+	display:inline-block;
+    }
+    nav div{
+
+
+
+    }
+    nav div h6{
+	font-size:1em;
+	margin:1em;
+
+    }
+
+    .quizAns{
+	margin:10px 20% 10px 20%;
+    }
+
+    .navLabel{
+
+	position:relative;
+	text-align:center;
+	float:left;
+
+    }
+    .navLabel:hover{
+	background-color:#E9E9E9;
+    }
+    .navChapter:hover, .navMedia:hover{
+	background-color:#C9C9C9;
+    }
+    .navMSection:hover, .navSection:hover{
+	background-color:#A9A9A9;
+    }
+    .navLabel h 6{
+	//margin:1em 0em 1em 0em;
+    }
+
+    .navChapter, .navMedia{
+	width:8em;
+	text-align:left;
+
+    }
+
+    .navSection, .navMSection{
+	margin-left:1em;
+	text-align:left;
+    }
+
+
+    #titlediv{
+	display:table;
+	width:100%;
+	text-align:center;
+    }
+
+    #title{
+
+	display:table-cell;
+
+    }
+
+    #chapterContainer, #mediaContainer{
+	position:absolute;
+	display:block;
+    }
+
+    #menuButton{
+	display:none;
+    }
+
+    #logo{
+        width:78px;
+    min-height:65px;
+    height:65px;
+    max-height:65px;
+    float:left;
+    width:100%;
+    background-color:#a6997e;
+//    max-height:10vh;
+
+    }
+    #logodiv{
+        
+        width:78px;
+	display:inline-block;
+	//width:15%;
+    min-height:65px;
+    height:65px;
+    max-height:65px;
+//	max-width:10vh;
+	float:left;
+	cursor:pointer;
+    }
+
+    #nav{
+	width:inherit;
+
+
+    display:inline-block;
+
+    }
+
+    #portraitTimeline{
+	display:none;
+    }
+
+    #landscapeTimeline{
+	display:initial;
+    }
+    #content{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+    }
+
+    #over, #under{
+	height:auto;
+	margin:auto;
+	
+	width:40vw;
+	left:20vw;
+    }
+    #overlap{
+	text-align:center;
+        position:relative;
+        margin:auto;
+	margin-top:50px;
+        height:40vw;
+        z-index:0;
+    }
+    #sliderCont{
+    margin:auto;
+    width:40%;
+    text-align:center;
+    min-width:400px;
+    }
+    #slider{
+        min-width:300px;
+    }
+    #prev, #next{
+	padding:1em;
+    }
+}
+
+
+
+
