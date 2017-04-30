@@ -646,15 +646,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         h = document.createElement("h6");
         h.appendChild(document.createTextNode("Africa"));
         msection.appendChild(h);
-    mchap.appendChild(msection);
-
-    //asiamap
-        msection = document.createElement("div");
-        msection.className = "navMSection"
-        msection.setAttribute("href", "../media/asiamap.html");
-        h = document.createElement("h6");
-        h.appendChild(document.createTextNode("Asia"));
-        msection.appendChild(h);
         mchap.appendChild(msection);
 
         //europemap
@@ -666,7 +657,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         msection.appendChild(h);
         mchap.appendChild(msection);
 
-        
+        //asiamap
+        msection = document.createElement("div");
+        msection.className = "navMSection"
+        msection.setAttribute("href", "../media/asiamap.html");
+        h = document.createElement("h6");
+        h.appendChild(document.createTextNode("Asia"));
+        msection.appendChild(h);
+	    mchap.appendChild(msection);
 
 
 	    mcont.appendChild(mchap);
@@ -686,15 +684,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         h = document.createElement("h6");
         h.appendChild(document.createTextNode("Europe"));
         msection.appendChild(h);
-    mchap.appendChild(msection);
-
-    //verdun
-        msection = document.createElement("div");
-        msection.className = "navMSection"
-        msection.setAttribute("href", "../media/verdunBnA.html");
-        h = document.createElement("h6");
-        h.appendChild(document.createTextNode("Verdun Fort"));
-        msection.appendChild(h);
         mchap.appendChild(msection);
 
         //ypres
@@ -702,11 +691,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
         msection.className = "navMSection"
         msection.setAttribute("href", "../media/ypresBnA.html");
         h = document.createElement("h6");
-        h.appendChild(document.createTextNode("Ypres"));
+        h.appendChild(document.createTextNode("City of Ypres"));
         msection.appendChild(h);
         mchap.appendChild(msection);
 
-        
+        //verdun
+        msection = document.createElement("div");
+        msection.className = "navMSection"
+        msection.setAttribute("href", "../media/verdunBnA.html");
+        h = document.createElement("h6");
+        h.appendChild(document.createTextNode("Verdun Fort"));
+        msection.appendChild(h);
+        mchap.appendChild(msection);
 
 	    mcont.appendChild(mchap);
 	    
