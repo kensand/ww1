@@ -1,14 +1,14 @@
-@import url("mobile.css");
-@import url("desktop.css");
-@import url("modal.css");
-@import url("nav.css");
-@import url("quiz.css");
+
 
 @font-face {
     font-family: Typewriter;
     src: url(Tox_Typewriter.ttf);
 }
-
+@import url("mobile.css");
+@import url("desktop.css");
+@import url("modal.css");
+@import url("nav.css");
+@import url("quiz.css");
 body {
     font-family: Typewriter;
     min-width:250px;
