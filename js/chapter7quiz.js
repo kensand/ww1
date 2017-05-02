@@ -1,4 +1,4 @@
-var quiz = [{question:"What events lead to the foundation of Israel",answers:["Balfor Declaration for a jewish state","Sykes-Picot Agreement influence on the Middle East","Ottoman Doctrine to give Middle East to its native populations","Balfor Declaration for a jewish state and Sykes-Picot Agreement influence on the Middle East"], solution:3},
+var quiz = [{question:"What events lead to the founding of Israel?",answers:["Balfor Declaration for a jewish state","Sykes-Picot Agreement influence on the Middle East","Ottoman Doctrine to give Middle East to its native populations","Balfor Declaration for a jewish state and Sykes-Picot Agreement influence on the Middle East"], solution:3},
 {question:"What was a major impact of Communism/ Marxism Socialism in Russia?",answers:["Rapidly evolved Russia from Agrarian to Industrial Society","Their ideology spread with rapid success in Europe","New social programs aided population","Rapidly evolved Russia from Agrarian to Industrial Society and New social programs aided population"], solution:3},
 {question:"Even after Peace, why did World War II occur?",answers:["Germany was not demilitarized completely","League of Nations did not prevent future conflicts","Weak replacement government allowed for Hitler to rise in power","All other choices"], solution:3},
 {question:"Why did US start to become a world superpower after WWI?",answers:["Late joining of war, meant less casualties","No battles on American Soil","Major Industrialization and Economic Boom during the War","All other choices"], solution:3},
@@ -16,6 +16,7 @@ var correctAnswers = 0;
 var startTime = new Date().getTime();
 var run = true;
 var answer = null;
+var numbers = new Array(quiz.length).fill(false);
 
 //beginning
 var empty = function(cont){
@@ -24,12 +25,15 @@ var empty = function(cont){
     }
 }
 
-var loadQuestion = function(cont, number){
+var loadQuestion = function(cont){
     empty(cont);
     var div = document.createElement("div");
     var q = document.createElement("h1");
 
-    
+    var number = Math.floor(Math.random() * quiz.length);
+    while(numbers[number]){
+	number = Math.floor(Math.random() * quiz.length);
+    }
     q.appendChild(document.createTextNode(quiz[number].question));
     div.appendChild(q);
     for(var j = 0; j < quiz[number].answers.length; j++){
@@ -42,16 +46,23 @@ var loadQuestion = function(cont, number){
         button.className = "quizButton";
 	button.ans = j;
 	button.onclick = function(){
+	    numbers[number] = true;
 	    submitAnswer(this.ans, number);
-	    number++;
-	    if(number >=quiz.length){
+	    if(input.length == quiz.length){
 		endQuiz(cont);
 	    }
 	    else{
-		loadQuestion(cont, number);
+		loadQuestion(cont);
 	    }
 	}
-	div.appendChild(button);
+	var list = div.getElementsByClassName("quizButton")
+	if(list.length == 0){
+	    div.appendChild(button);
+	}
+	else{
+	    
+	    div.insertBefore(button, list[Math.floor(Math.random() *list.length)]);
+	}
     }
     cont.appendChild(div);
     answer = null;
@@ -75,6 +86,10 @@ var endQuiz = function(cont){
 	var div = document.createElement("div");
 	var q = document.createElement("h2");    
 	q.appendChild(document.createTextNode("Question " + (i+1).toString()));
+
+	div.appendChild(q);
+	var q = document.createElement("p");    
+	q.appendChild(document.createTextNode(quiz[i].question));
 	
 	div.appendChild(q);
 	var q = document.createElement("p");    

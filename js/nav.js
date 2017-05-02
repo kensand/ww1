@@ -718,6 +718,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	    mchap.setAttribute("href", "../media/videos.html");
 	    mchap.appendChild(h);
 
+    mcont.appendChild(mchap);
+    mchap = document.createElement("div");
+	    mchap.className = "navMedia";
+	    mchap.id = "test";
+        h = document.createElement("h6");
+	    h.appendChild(document.createTextNode("Test"));
+	    mchap.setAttribute("href", "../media/final.html");
+	    mchap.appendChild(h);
+
 	    mcont.appendChild(mchap);
 	    
         label.appendChild(mcont);
@@ -1116,7 +1125,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
 	    var vids = document.getElementById("vids");
 	    vids.close = function(){return false;}
-	    vids.onclick = vids.open = function(){window.location="../media/videos.html";};
+    vids.onclick = vids.open = function(){window.location="../media/videos.html";};
+    var test = document.getElementById("test");
+	    test.close = function(){return false;}
+    test.onclick = test.open = function(){console.log("click");window.location="../media/final.html";};
          var about = document.getElementById("About");
 	    about.close = function(){return false;}
 	    about.onclick = about.open = function(){window.location="../home/about.html";};

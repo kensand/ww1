@@ -1,9 +1,11 @@
-var quiz = [{question:"What was the objective of the Spring Offensive?",answers:["To take finish the war on west via breaking Entente lines","To take out Italy","To to take out Entente forces by reaching English Channel","To take on Entente head on"], solution:0},
-{question:"Why were the Entente able to push back Germany in the 100 Day Offensive?",answers:["Germany was weakened after their Spring Offensive","got American and Entente reinforcements","Caught Germans by surprise with their counter attack","All other choices"], solution:3},
-{question:"When was the Armistice signed to stop the war?",answers:["11/11/1918","10/21/1919","6/28/1919","10/25/1917"], solution:0},
-{question:"Why did Germany have problems with the Versailles Peace Treaty?",answers:["They were given the reparations for a total of $31 Billion ($442 Billion Today)","Were blamed to be only one responsible for WWI (War Guilt)","Its population would not be happy if signed","All other choices"], solution:3},
-{question:"Why did Woodrow Wilson get a Nobel Prize?",answers:["For creating the League of Nations","For ensuring peace after WWI","For stopping the Ottoman Genocides","For creating the League of Nations and For ensuring peace after WWI"], solution:3},
-{question:"What were the broad goals of Wilson's 14 points",answers:["Restore territory to nations and create new nations from old ones","Create a League of Nations","Create international peace","All Choices"], solution:3},];
+var quiz = [{question:"Why did the United States enter WWI?",answers:["A German telegram to Mexico, suggesting that they declare war on the USA","Unrestricted U-boat attacks began again in 1917","Germany declared war on the United States","A German telegram to Mexico, suggesting that they declare war on the USA","Unrestricted U-boat attacks began again in 1917"], solution:3},
+{question:"What was the major cause of the Russian revolutions?",answers:["Weakening Monarchy under Nicholas II	War weariness","Communist ideology spreading","All other choices"], solution:3},
+{question:"Which revolution gave communist control of Russia?",answers:["March/Red Revolution","October /Bolshevik Revolution","February / Duma Revolution","June/Stalin Revolution"], solution:1},
+{question:"What was the importance of the Italian Front in 1917",answers:["Germany needed Austria-Hungary to keep fighting","Italians were backing off to fight in Greece Instead","It was stalemate between Austria-Hungary and Italy","Germany needed Austria-Hungary to keep fighting and It was stalemate between Austria-Hungary and Italy"], solution:3},
+{question:"Who would aid the Arabs in their revolution and fighting against the Ottomans?",answers:["Winston Churchill","T. E. Lawrence","John Maxwell","Edward Bulfin"], solution:1},
+{question:"Why did the Arabs join British Forces?",answers:["Were offered large amount of land if victorious","Opposed the Ottoman Rule","They were offered a large amount of money/wealth","Were offered large amount of land if victorious and Opposed the Ottoman Rule"], solution:3},
+{question:"What battle of Ypres is know as the battle of Passchendaele",answers:["First Battle of Ypres","Second Battle of Ypres","Third Battle of Ypres","Fourth Battle of Ypres"], solution:2},];
+
 
 var input = [];
 
@@ -13,7 +15,6 @@ var correctAnswers = 0;
 var startTime = new Date().getTime();
 var run = true;
 var answer = null;
-var numbers = new Array(quiz.length).fill(false);
 
 //beginning
 var empty = function(cont){
@@ -22,15 +23,12 @@ var empty = function(cont){
     }
 }
 
-var loadQuestion = function(cont){
+var loadQuestion = function(cont, number){
     empty(cont);
     var div = document.createElement("div");
     var q = document.createElement("h1");
 
-    var number = Math.floor(Math.random() * quiz.length);
-    while(numbers[number]){
-	number = Math.floor(Math.random() * quiz.length);
-    }
+    
     q.appendChild(document.createTextNode(quiz[number].question));
     div.appendChild(q);
     for(var j = 0; j < quiz[number].answers.length; j++){
@@ -43,23 +41,16 @@ var loadQuestion = function(cont){
         button.className = "quizButton";
 	button.ans = j;
 	button.onclick = function(){
-	    numbers[number] = true;
 	    submitAnswer(this.ans, number);
-	    if(input.length == quiz.length){
+	    number++;
+	    if(number >=quiz.length){
 		endQuiz(cont);
 	    }
 	    else{
-		loadQuestion(cont);
+		loadQuestion(cont, number);
 	    }
 	}
-	var list = div.getElementsByClassName("quizButton")
-	if(list.length == 0){
-	    div.appendChild(button);
-	}
-	else{
-	    
-	    div.insertBefore(button, list[Math.floor(Math.random() *list.length)]);
-	}
+	div.appendChild(button);
     }
     cont.appendChild(div);
     answer = null;
@@ -83,10 +74,6 @@ var endQuiz = function(cont){
 	var div = document.createElement("div");
 	var q = document.createElement("h2");    
 	q.appendChild(document.createTextNode("Question " + (i+1).toString()));
-
-	div.appendChild(q);
-	var q = document.createElement("p");    
-	q.appendChild(document.createTextNode(quiz[i].question));
 	
 	div.appendChild(q);
 	var q = document.createElement("p");    

@@ -6,7 +6,6 @@ var quiz = [{question:"Why did the United States enter WWI?",answers:["A German 
 {question:"Why did the Arabs join British Forces?",answers:["Were offered large amount of land if victorious","Opposed the Ottoman Rule","They were offered a large amount of money/wealth","Were offered large amount of land if victorious and Opposed the Ottoman Rule"], solution:3},
 {question:"What battle of Ypres is know as the battle of Passchendaele",answers:["First Battle of Ypres","Second Battle of Ypres","Third Battle of Ypres","Fourth Battle of Ypres"], solution:2},];
 
-
 var input = [];
 
 var questionTime = 3000;
@@ -15,6 +14,7 @@ var correctAnswers = 0;
 var startTime = new Date().getTime();
 var run = true;
 var answer = null;
+var numbers = new Array(quiz.length).fill(false);
 
 //beginning
 var empty = function(cont){
@@ -23,12 +23,15 @@ var empty = function(cont){
     }
 }
 
-var loadQuestion = function(cont, number){
+var loadQuestion = function(cont){
     empty(cont);
     var div = document.createElement("div");
     var q = document.createElement("h1");
 
-    
+    var number = Math.floor(Math.random() * quiz.length);
+    while(numbers[number]){
+	number = Math.floor(Math.random() * quiz.length);
+    }
     q.appendChild(document.createTextNode(quiz[number].question));
     div.appendChild(q);
     for(var j = 0; j < quiz[number].answers.length; j++){
@@ -41,16 +44,23 @@ var loadQuestion = function(cont, number){
         button.className = "quizButton";
 	button.ans = j;
 	button.onclick = function(){
+	    numbers[number] = true;
 	    submitAnswer(this.ans, number);
-	    number++;
-	    if(number >=quiz.length){
+	    if(input.length == quiz.length){
 		endQuiz(cont);
 	    }
 	    else{
-		loadQuestion(cont, number);
+		loadQuestion(cont);
 	    }
 	}
-	div.appendChild(button);
+	var list = div.getElementsByClassName("quizButton")
+	if(list.length == 0){
+	    div.appendChild(button);
+	}
+	else{
+	    
+	    div.insertBefore(button, list[Math.floor(Math.random() *list.length)]);
+	}
     }
     cont.appendChild(div);
     answer = null;
@@ -74,6 +84,10 @@ var endQuiz = function(cont){
 	var div = document.createElement("div");
 	var q = document.createElement("h2");    
 	q.appendChild(document.createTextNode("Question " + (i+1).toString()));
+
+	div.appendChild(q);
+	var q = document.createElement("p");    
+	q.appendChild(document.createTextNode(quiz[i].question));
 	
 	div.appendChild(q);
 	var q = document.createElement("p");    

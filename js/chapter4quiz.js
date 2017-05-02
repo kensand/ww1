@@ -6,8 +6,6 @@ var quiz = [{question:"How many soldiers died during the battle of Verdun (estim
 {question:"How many Armenians were killed between 1915 and 1923",answers:["1.5 Million","1 Million","2 Million","0.5 Million"], solution:0},
 {question:"What was the impact of the Brusilov Offensive?",answers:["Massive Austro-Hungarian casualties","Forced Germany to withdraw from Verdun Offensive","Ottoman withdrawal from Black Sea","Massive Austro-Hungarian casualties and Forced Germany to withdraw from Verdun Offensive"], solution:3},
 {question:"Why did the Ottoman Empire commit genocide during WWI",answers:["To remove religious groups from the Empire","To remove revolutionaries or possible Entente Supporters","To remove ethnic groups from the Empire","All other choices"], solution:3},];
-
-
 var input = [];
 
 var questionTime = 3000;
@@ -16,6 +14,7 @@ var correctAnswers = 0;
 var startTime = new Date().getTime();
 var run = true;
 var answer = null;
+var numbers = new Array(quiz.length).fill(false);
 
 //beginning
 var empty = function(cont){
@@ -24,12 +23,15 @@ var empty = function(cont){
     }
 }
 
-var loadQuestion = function(cont, number){
+var loadQuestion = function(cont){
     empty(cont);
     var div = document.createElement("div");
     var q = document.createElement("h1");
 
-    
+    var number = Math.floor(Math.random() * quiz.length);
+    while(numbers[number]){
+	number = Math.floor(Math.random() * quiz.length);
+    }
     q.appendChild(document.createTextNode(quiz[number].question));
     div.appendChild(q);
     for(var j = 0; j < quiz[number].answers.length; j++){
@@ -42,16 +44,23 @@ var loadQuestion = function(cont, number){
         button.className = "quizButton";
 	button.ans = j;
 	button.onclick = function(){
+	    numbers[number] = true;
 	    submitAnswer(this.ans, number);
-	    number++;
-	    if(number >=quiz.length){
+	    if(input.length == quiz.length){
 		endQuiz(cont);
 	    }
 	    else{
-		loadQuestion(cont, number);
+		loadQuestion(cont);
 	    }
 	}
-	div.appendChild(button);
+	var list = div.getElementsByClassName("quizButton")
+	if(list.length == 0){
+	    div.appendChild(button);
+	}
+	else{
+	    
+	    div.insertBefore(button, list[Math.floor(Math.random() *list.length)]);
+	}
     }
     cont.appendChild(div);
     answer = null;
@@ -75,6 +84,10 @@ var endQuiz = function(cont){
 	var div = document.createElement("div");
 	var q = document.createElement("h2");    
 	q.appendChild(document.createTextNode("Question " + (i+1).toString()));
+
+	div.appendChild(q);
+	var q = document.createElement("p");    
+	q.appendChild(document.createTextNode(quiz[i].question));
 	
 	div.appendChild(q);
 	var q = document.createElement("p");    
